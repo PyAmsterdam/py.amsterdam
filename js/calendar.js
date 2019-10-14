@@ -10,27 +10,27 @@ document.addEventListener('DOMContentLoaded', function() {
     events: [
       {
         title: 'Meetup',
-        url: 'details.html',
+        url: 'details/details.html',
         start: '2019-10-01'
       },
       {
         title: 'Workshop',
-        url: 'details.html',
+        url: 'details/details.html',
         start: '2019-10-07'
       },
       {
         title: 'Python',
-        url: 'details.html',
+        url: 'details/details.html',
         start: '2019-10-09'
       },
       {
         title: 'Meetup',
-        url: 'details.html',
+        url: 'details/details.html',
         start: '2019-11-16'
       },
       {
         title: 'Google',
-        url: 'details.html',
+        url: 'details/details.html',
         start: '2019-10-28'
       }
       /*{
