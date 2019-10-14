@@ -10,7 +10,7 @@
 
   <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
 
-  <title>Details - Python Amsterdam</title>
+  <title>Event details - Python Amsterdam</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,21 +22,7 @@
   <link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="../css/stylish-portfolio.css" rel="stylesheet">
-
-  <!-- jQuery scroll animate-->
-
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>  
-
-  <script>
-    jQuery(document).ready(function($) {
-
-    $(".scroll").click(function(event){   
-      event.preventDefault();
-      $('html,body').animate({scrollTop:$(this.hash).offset().top -70}, 800);
-    });
-    });
-  </script>
+  <link href="../css/stylish-portfolio.min.css" rel="stylesheet">
 
 </head>
 
@@ -45,7 +31,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand scroll" href="../index.html"><img src="../img/logo.png" /></a>
+      <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -55,11 +41,10 @@
   <!-- Header -->
   <header class="masthead d-flex" id="home">
     <div class="container text-center my-auto">      
-      <h1 class="mb-1">Python in <span class="text-danger">Amsterdam</span></h1>
+      <h1 class="mb-1">Event <span class="text-danger">details</span></h1>
       <h3 class="mb-5">
         <p>This is a classical tech meetup where Python enthusiasts meet to discuss their favorite topics over pizza and beer.</p>
-      </h3>
-      <a class="btn btn-danger btn-my-style scroll" href="#who-we-are"><i class="fas fa-angle-down"></i></a>
+      </h3>      
     </div>
   </header>
 
