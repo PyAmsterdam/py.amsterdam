@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+  <title>Python Amsterdam</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+  <!-- jQuery scroll animate-->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <script>
+    jQuery(document).ready(function($) {
+
+    $(".scroll").click(function(event){   
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top -70}, 800);
+    });
+    });
+  </script>
+
+  <!-- CSS and JavaScript for calendar-->
+
+  <link href='packages/core/main.css' rel='stylesheet' />
+  <link href='packages/daygrid/main.css' rel='stylesheet' />
+  <script src='packages/core/main.js'></script>
+  <script src='packages/interaction/main.js'></script>
+  <script src='packages/daygrid/main.js'></script>
+  <script src='packages/core/locales/en-gb.js'></script>
+  <script src='js/calendar.js'></script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand scroll" href="#home"><img src="img/logo.png" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#who-we-are">Who we are</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#a-calendar">Calendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#sponsors">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Header -->
+  <header class="masthead d-flex" id="home">
+    <div class="container text-center my-auto">      
+      <h1 class="mb-1">Python in <span class="text-danger">Amsterdam</span></h1>
+      <h3 class="mb-5">
+        <p>This is a classical tech meetup where Python enthusiasts meet to discuss their favorite topics over pizza and beer.</p>
+      </h3>
+      <a class="btn btn-danger btn-my-style scroll" href="#who-we-are"><i class="fas fa-angle-down"></i></a>
+    </div>
+  </header>
+
+  <!-- Who we are -->
+  <section class="content-section bg-light" id="who-we-are">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto content-section-heading">
+            <h3 class="text-danger mb-0">About us</h3>
+          <h2>Who we are?</h2>
+          <p class="lead mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
+          <a class="btn btn-dark btn-xl scroll" href="#services">What We Offer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="content-section bg-danger text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-dark mb-0">Services</h3>
+        <h2 class="mb-5">What We Offer</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-smartphone"></i>
+          </span>
+          <h4>
+            <strong>Responsive</strong>
+          </h4>
+          <p class="text-faded mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Redesigned</strong>
+          </h4>
+          <p class="text-faded mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-like"></i>
+          </span>
+          <h4>
+            <strong>Favorited</strong>
+          </h4>
+          <p class="text-faded mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="content-section bg-white text-dark text-center" id="team">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-danger mb-0">Python Amsterdam</h3>
+        <h2 class="mb-5">Team</h2>
+      </div>
+      <div class="row team">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <img src="img/avatar.png" class="rounded-circle" />
+          </span>
+          <h5>Name Lastname</h5>
+          <p class="text-faded mb-3 text-dark">Position</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/company/pyamsterdam/">
+                <i class="icon-social-linkedin"></i>
+              </a>
+            </li> 
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/company/pyamsterdam/">
+                <i class="icon-social-facebook"></i>
+              </a>
+            </li> 
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <img src="img/avatar.png" class="rounded-circle" />
+          </span>
+          <h5>Name Lastname</h5>
+          <p class="text-faded mb-3 text-dark">Position</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/company/pyamsterdam/">
+                <i class="icon-social-linkedin"></i>
+              </a>
+            </li> 
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/company/pyamsterdam/">
+                <i class="icon-social-facebook"></i>
+              </a>
+            </li> 
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <img src="img/avatar.png" class="rounded-circle" />
+          </span>
+          <h5>Name Lastname</h5>
+          <p class="text-faded mb-3 text-dark">Position</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/company/pyamsterdam/">
+                <i class="icon-social-linkedin"></i>
+              </a>
+            </li> 
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/company/pyamsterdam/">
+                <i class="icon-social-facebook"></i>
+              </a>
+            </li> 
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <img src="img/avatar.png" class="rounded-circle" />
+          </span>
+          <h5>Name Lastname</h5>
+          <p class="text-faded mb-3 text-dark">Position</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/company/pyamsterdam/">
+                <i class="icon-social-linkedin"></i>
+              </a>
+            </li> 
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/company/pyamsterdam/">
+                <i class="icon-social-facebook"></i>
+              </a>
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendar -->
+  <section class="content-section bg-light" id="a-calendar">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto content-section-heading">
+          <h3 class="text-danger mb-0">Meetup</h3>
+          <h2>Calendar</h2>
+          <div id='calendar'></div>
+          <a class="btn btn-dark btn-xl" href="https://www.meetup.com/PyAmsterdam/">Meetup</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors -->
+  <section class="content-section" id="sponsors">
+    <div class="container text-center">
+      <div class="content-section-heading text-center">
+        <h3 class="text-danger mb-0">Our</h3>
+        <h2 class="mb-5">Sponsors</h2>
+      </div>
+      <div class="row pt-5">
+        <div class="col-12 col-md-3 text-center">
+          <img src="img/sponsor1.png" />
+        </div>
+        <div class="col-12 col-md-3 text-center">
+          <img src="img/sponsor2.png" />
+        </div>
+        <div class="col-12 col-md-3 text-center">
+          <img src="img/sponsor3.png" />
+        </div>
+        <div class="col-12 col-md-3 text-center">
+          <img src="img/sponsor1.png" />
+        </div>        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark" id="contact">
+    <div class="footer-widgets bg-dark text-white pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h3 class="mb-4">Contact</h3>
+            <p>Phone: 062 333 333</p>
+            <p>Address: Some Address, Amsterdam</p>
+            <p>E-mail: example@example.com</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3 class="mb-4">More information</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3 class="mb-4">Something</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+         </div>
+      </div>
+    </div>
+    <div class="container text-center">
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/company/pyamsterdam/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>            
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/PyAmsterdam/py-meetups">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#">
+            <i class="icon-social-twitter"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; PyAmsterdam 2019</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded scroll" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+</body>
+
+</html>
