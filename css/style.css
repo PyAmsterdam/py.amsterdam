@@ -1,5 +1,5 @@
 .navbar-brand img{
-    width: 60%;
+    width: 20%;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255);
@@ -7,6 +7,14 @@
 }
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
     color: #dc3545;
+}
+.bg-opacity{
+    background: rgba(52,58,64,0.8) !important;
+}
+header h1{
+    font-size: 5rem !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 900 !important;
 }
 .blue-color{
     color: #3776aa;
@@ -75,4 +83,34 @@ tr:first-child > td > .fc-day-grid-event{
 }
 .fc-dayGrid-view .fc-week-number, .fc-dayGrid-view .fc-day-number{
     padding: 7px;
+}
+.footer-icon{
+    width: 40px;
+    margin-right: 5px;
+}
+.footer-logo{
+    width: 230px;
+    margin-bottom: 15px;
+}
+footer a{
+    transition: 0.3s;
+}
+footer a:hover{
+    text-decoration: none;  
+    font-weight: 600;  
+}
+@media (min-width: 992px){
+    .masthead h1 {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 767px){
+    header h1 {
+        font-size: 3rem !important;
+    }
+}
+@media (max-width: 440px){
+    header h1 {
+        font-size: 2rem !important;
+    }
 }

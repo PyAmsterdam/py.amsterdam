@@ -13,19 +13,19 @@
   <title>Python Amsterdam</title>
 
   <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
 
   <!-- Custom Fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
-  <!-- my style -->
   <link rel="stylesheet" href="css/style.css">
-
   <!-- jQuery scroll animate-->
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -35,12 +35,12 @@
 
     $(".scroll").click(function(event){   
       event.preventDefault();
-      $('html,body').animate({scrollTop:$(this.hash).offset().top -70}, 800);
+      $('html,body').animate({scrollTop:$(this.hash).offset().top -86}, 800);
     });
     });
   </script>
 
-  <!-- CSS and JavaScript for calendar -->
+  <!-- CSS and JavaScript for calendar-->
 
   <link href='packages/core/main.min.css' rel='stylesheet' />
   <link href='packages/daygrid/main.min.css' rel='stylesheet' />
@@ -55,9 +55,9 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-opacity fixed-top">
     <div class="container">
-      <a class="navbar-brand scroll" href="#home"><img src="img/logo.png" /></a>
+      <a class="navbar-brand scroll" href="#home"><img src="img/logo.svg" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -92,7 +92,7 @@
   <!-- Header -->
   <header class="masthead d-flex" id="home">
     <div class="container text-center my-auto">      
-      <h1 class="mb-1">Python in <span class="text-danger">Amsterdam</span></h1>
+      <h1 class="mb-1"><span class="text-primary">p</span><span class="text-warning">y</span><span class="text-dark">.</span><span class="text-danger">am</span>sterdam</h1>
       <h3 class="mb-5">
         <p>This is a classical tech meetup where Python enthusiasts meet to discuss their favorite topics over pizza and beer.</p>
       </h3>
@@ -105,8 +105,8 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto content-section-heading">
-            <h3 class="text-danger mb-0">About us</h3>
-          <h2>Who we are?</h2>
+          <h3 class="text-danger mb-0">About us</h3>
+          <h2>Who Are We?</h2>
           <p class="lead mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
           <a class="btn btn-dark btn-xl scroll" href="#services">What We Offer</a>
         </div>
@@ -257,76 +257,60 @@
 
   <!-- Sponsors -->
   <section class="content-section" id="sponsors">
-    <div class="container text-center">
+    <div class="container">
       <div class="content-section-heading text-center">
         <h3 class="text-danger mb-0">Our</h3>
         <h2 class="mb-5">Sponsors</h2>
       </div>
       <div class="row pt-5">
-        <div class="col-12 col-md-3 text-center">
-          <img src="img/sponsor1.png" />
+        <div class="col-12 col-md-6">
+          <ul>
+            <li>Sponsor - Some information. <a href="#">Some link</a></li>
+            <li>Sponsor - Some information. <a href="#">Some link</a></li>
+            <li>Sponsor - Some information. <a href="#">Some link</a></li>
+            <li>Sponsor - Some information. <a href="#">Some link</a></li>
+          </ul>
         </div>
-        <div class="col-12 col-md-3 text-center">
-          <img src="img/sponsor2.png" />
+        <div class="col-12 col-md-6">
+          <ul>
+            <li>Sponsor - Some information. <a href="#">Some link</a></li>
+            <li>Sponsor - Some information. <a href="#">Some link</a></li>
+            <li>Sponsor - Some information. <a href="#">Some link</a></li>
+            <li>Sponsor - Some information. <a href="#">Some link</a></li>
+          </ul>
         </div>
-        <div class="col-12 col-md-3 text-center">
-          <img src="img/sponsor3.png" />
-        </div>
-        <div class="col-12 col-md-3 text-center">
-          <img src="img/sponsor1.png" />
-        </div>        
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer bg-dark" id="contact">
-    <div class="footer-widgets bg-dark text-white pt-5 pb-5">
+  <footer class="footer bg-opacity" id="contact">
+    <div class="footer-widgets bg-light text-dark pt-5 pb-5">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4">
-            <h3 class="mb-4">Contact</h3>
-            <p>Phone: 062 333 333</p>
-            <p>Address: Some Address, Amsterdam</p>
-            <p>E-mail: example@example.com</p>
+            <p><img src="img/pyamsterdamLogo.png" class="footer-logo"></p>
+            <p><a href="mailto:info@py.amsterdam"><img src="img/email.png" class="footer-icon">info@py.amsterdam</a></p>
+            <p><a href="https://twitter.com"><img src="img/twitter.png" class="footer-icon">@pyamsterdam</a></p>
+            <p><a href="https://meetup.com/pyamsterdam"><img src="img/meetup.png" class="footer-icon">meetup.com/pyamsterdam</a></p>
+            <p><a href="https://github.com/PyAmsterdam"><img src="img/github.png" class="footer-icon">github.com/PyAmsterdam</a></p>
+            <p><a href="https://pyamsterdam.slack.com"><img src="img/slack.png" class="footer-icon">pyamsterdam.slack.com</a></p>  
           </div>
           <div class="col-12 col-md-4">
             <h3 class="mb-4">More information</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
           </div>
           <div class="col-12 col-md-4">
-            <h3 class="mb-4">Something</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <h3 class="mb-4">Join us at Slack</h3>
+            <img src="img/slack-QR.png">
           </div>
          </div>
       </div>
     </div>
-    <div class="container text-center">
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/company/pyamsterdam/">
-            <i class="icon-social-linkedin"></i>
-          </a>
-        </li>            
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/PyAmsterdam/py-meetups">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-twitter"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Copyright &copy; PyAmsterdam 2019</p>
+    <div class="container text-center">      
+      <p class="text-white small mb-0 mt-5">&copy; 2019 PyAmsterdam</p>
     </div>
   </footer>
 
