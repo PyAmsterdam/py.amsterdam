@@ -17,10 +17,16 @@ header h1{
     font-weight: 900 !important;
 }
 .blue-color{
-    color: #3776aa;
+    color: #306998;
 }
 .yellow-color{
-    color: #ffd041;
+    color: #FFD43B;
+}
+.red-color{
+    color: #da1219;
+}
+.black-color{
+    color: #000;
 }
 .btn-my-style{
     padding: 10px 20px;
@@ -91,6 +97,10 @@ tr:first-child > td > .fc-day-grid-event{
 .footer-logo{
     width: 230px;
     margin-bottom: 15px;
+    margin-top: 8px;
+}
+.qr-code-slack{
+    width: 80%;
 }
 footer a{
     transition: 0.3s;
