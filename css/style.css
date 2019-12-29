@@ -1,9 +1,13 @@
 .navbar-brand img{
-    width: 20%;
+    width: 56%;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255);
     font-weight: 600;
+}
+.navbar-brand{
+    width: 400px !important;
+    padding: 22px 0 !important;
 }
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
     color: #dc3545;
