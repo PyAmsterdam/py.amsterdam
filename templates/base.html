@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" type="image/png" href="{{ SITEURL~'/'~THEME_STATIC_DIR~'/img/favicon.png' }}"/>
+
+    <title>Python Amsterdam</title>
+
+    {% set css_files = [
+    '/vendor/bootstrap/css/bootstrap.min.css',
+    '/vendor/fontawesome-free/css/all.min.css',
+    '/vendor/simple-line-icons/css/simple-line-icons.css',
+    '/css/stylish-portfolio.min.css',
+    '/packages/daygrid/main.min.css',
+    '/packages/core/main.min.css',
+    '/css/style.css',
+    ] %}
+
+    {% for file in css_files %}
+        <link href="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}" rel="stylesheet"
+              type="text/css">
+    {% endfor %}
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700,300italic,400italic,700italic"
+          rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-opacity fixed-top">
+    <div class="container">
+        <a class="navbar-brand scroll" href="#home">
+            <img alt="py.amsterdam-white.svg" src="{{ SITEURL~'/'~THEME_STATIC_DIR~'/img/py.amsterdam-white.svg' }}"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto text-uppercase">
+            {% block nav_items %} {% endblock nav_items %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{#{% set next_section='something' %}#}
+{% if next_section %}
+    {% with next_section = next_section %}
+        {% include 'includes/header.html' %}
+    {% endwith %}
+{% else %}
+    {% with next_section = '#who-we-are' %}
+        {% include 'includes/header.html' %}
+    {% endwith %}
+{% endif %}
+
+
+
+{% block content %} {% endblock content %}
+
+<!-- Footer -->
+<footer class="footer bg-opacity" id="contact">
+    <div class="footer-widgets bg-light text-dark pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <p><img alt="py.amsterdam.svg" src="{{ SITEURL~'/'~THEME_STATIC_DIR~'/img/py.amsterdam.svg' }}"
+                            class="footer-logo"></p>
+                    <p><a href="mailto:info@py.amsterdam">
+                        <i class="fas fa-envelope align-middle footer-icon"></i>
+                        info@py.amsterdam
+                    </a></p>
+                    <p><a href="https://twitter.com">
+                        <i class="fab fa-twitter align-middle footer-icon"></i>
+                        @pyamsterdam
+                    </a></p>
+                    <p><a href="https://meetup.com/pyamsterdam">
+                        <i class="fab fa-meetup align-middle footer-icon"></i>
+                        meetup.com/pyamsterdam
+                    </a></p>
+                    <p><a href="https://github.com/PyAmsterdam">
+                        <i class="fab fa-github align-middle footer-icon"></i>
+                        github.com/PyAmsterdam
+                    </a></p>
+                    <p>
+                        <a href="https://pyamsterdam.slack.com">
+                            <i class="fab fa-slack align-middle footer-icon"></i>
+                            pyamsterdam.slack.com
+                        </a></p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3 class="mb-4">More information</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3 class="mb-4">Join us at Slack</h3>
+                    <img alt="qr-code-slack.svg" src="{{ SITEURL~'/'~THEME_STATIC_DIR~'/img/qr-code-slack.svg' }}"
+                         class="qr-code-slack">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <p class="text-white small mb-0 mt-5">&copy; 2019 PyAmsterdam</p>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded scroll" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+
+{#JS for calendar and bootstrap#}
+{% set js_files = [
+    '/packages/core/main.min.js',
+    '/packages/daygrid/main.min.js',
+    '/packages/core/locales/en-gb.js',
+    '/js/calendar.js',
+    '/vendor/jquery/jquery.min.js',
+    '/vendor/bootstrap/js/bootstrap.bundle.min.js',
+    ] %}
+
+{% for file in js_files %}
+    <script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
+{% endfor %}
+
+<!-- jQuery scroll animate-->
+<script>
+    jQuery(document).ready(function ($) {
+
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({scrollTop: $(this.hash).offset().top - 86}, 800);
+        });
+    });
+</script>
+
+<!-- Plugin JavaScript -->
+{% with file='/vendor/jquery-easing/jquery.easing.min.js' %}
+<script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
+{% endwith %}
+</body>
+
+</html>

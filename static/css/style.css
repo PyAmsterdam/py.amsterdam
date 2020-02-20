@@ -74,28 +74,29 @@ footer.footer {
 .navbar-dark .navbar-nav .nav-link:focus{
     color: #dc3545;
 }
-#calendar {
-    max-width: 600px;
-    margin: 50px auto;
-}
-tr:first-child > td > .fc-day-grid-event{
-    margin-top: -50px;
-}
-.fc-row .fc-widget-header{
-    border-right-width: 0px;
-    margin-right: 0px;
-}
-.fc-dayGrid-view .fc-body .fc-row {
-    min-height: 2.5em;
-}
-.fc table{
-    font-size: 18px;
-}
-.fc-dayGrid-view .fc-week-number, .fc-dayGrid-view .fc-day-number{
-    padding: 7px;
-}
+/*#calendar {*/
+/*    max-width: 600px;*/
+/*    margin: 50px auto;*/
+/*}*/
+/*tr:first-child > td > .fc-day-grid-event{*/
+/*    margin-top: -50px;*/
+/*}*/
+/*.fc-row .fc-widget-header{*/
+/*    border-right-width: 0px;*/
+/*    margin-right: 0px;*/
+/*}*/
+/*.fc-dayGrid-view .fc-body .fc-row {*/
+/*    min-height: 2.5em;*/
+/*}*/
+/*.fc table{*/
+/*    font-size: 18px;*/
+/*}*/
+/*.fc-dayGrid-view .fc-week-number, .fc-dayGrid-view .fc-day-number{*/
+/*    padding: 7px;*/
+/*}*/
 .footer-icon{
-    width: 40px;
+    font-size: 2.5rem;
+    color: black;
     margin-right: 5px;
 }
 .footer-logo{
