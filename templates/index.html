@@ -1,4 +1,15 @@
 {% extends 'base.html' %}
+{% block css %}
+    {% set css_files = [
+    '/packages/daygrid/main.min.css',
+    '/packages/core/main.min.css',
+    ] %}
+
+    {% for file in css_files %}
+        <link href="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}" rel="stylesheet"
+              type="text/css">
+    {% endfor %}
+{% endblock css %}
 
 {% block nav_items %}
     <li class="nav-item"><a class="nav-link scroll" href="#home">Home <span class="sr-only">(current)</span></a></li>
@@ -23,3 +34,16 @@
     {% include 'includes/section_sponsors.html' %}
 
 {% endblock content %}
+
+{% block scripts %}
+    {% set js_files = [
+    '/packages/core/main.min.js',
+    '/packages/daygrid/main.min.js',
+    '/packages/core/locales/en-gb.js',
+    '/js/calendar.js',
+    ] %}
+
+    {% for file in js_files %}
+        <script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
+    {% endfor %}
+{% endblock scripts %}

@@ -3,7 +3,7 @@
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: white;
+  color: rgba(255, 255, 255);
   font-weight: 600;
 }
 
@@ -25,7 +25,7 @@
 
 header h1 {
   font-size: 5rem !important;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   font-weight: 900 !important;
 }
 
@@ -145,16 +145,19 @@ footer a:hover {
     font-size: 4rem;
   }
 }
+
 @media (max-width: 767px) {
   header h1 {
     font-size: 3rem !important;
   }
 }
+
 @media (max-width: 440px) {
   header h1 {
     font-size: 2rem !important;
   }
 }
+
 /*.fa.fa-tag{*/
 /*    color: transparent;*/
 /*    -webkit-text-stroke-width: 2px;*/
@@ -179,13 +182,17 @@ footer a:hover {
 /*    -webkit-text-stroke-width: 1px;*/
 /*    color:transparent;*/
 /*}*/
-.article-content p {
-  text-align: justify;
-}
-.article-content .schedule-table {
-  border: transparent;
-  width: 100%;
-  margin-bottom: 1rem;
+
+.article-content {
+  p {
+    text-align: justify;
+  }
+  .schedule-table {
+    border: transparent;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
 }
 
-/*# sourceMappingURL=style.css.map */
+//div > p

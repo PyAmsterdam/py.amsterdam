@@ -15,17 +15,19 @@
     {% set css_files = [
     '/vendor/bootstrap/css/bootstrap.min.css',
     '/vendor/fontawesome-free/css/all.min.css',
-    '/vendor/simple-line-icons/css/simple-line-icons.css',
     '/css/stylish-portfolio.min.css',
-    '/packages/daygrid/main.min.css',
-    '/packages/core/main.min.css',
-    '/css/style.css',
     ] %}
 
     {% for file in css_files %}
         <link href="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}" rel="stylesheet"
               type="text/css">
     {% endfor %}
+    {% block css %}{% endblock css %}
+    {% with file='/css/style.css' %}
+        <link href="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}" rel="stylesheet"
+              type="text/css">
+    {% endwith %}
+
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap"
@@ -58,11 +60,11 @@
 {#{% set next_section='something' %}#}
 {% if next_section %}
     {% with next_section = next_section %}
-        {% include 'includes/header.html' %}
+        {% include 'includes/site_header.html' %}
     {% endwith %}
 {% else %}
     {% with next_section = '#who-we-are' %}
-        {% include 'includes/header.html' %}
+        {% include 'includes/site_header.html' %}
     {% endwith %}
 {% endif %}
 
@@ -70,67 +72,14 @@
 
 {% block content %} {% endblock content %}
 
-<!-- Footer -->
-<footer class="footer bg-opacity" id="contact">
-    <div class="footer-widgets bg-light text-dark pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <p><img alt="py.amsterdam.svg" src="{{ SITEURL~'/'~THEME_STATIC_DIR~'/img/py.amsterdam.svg' }}"
-                            class="footer-logo"></p>
-                    <p><a href="mailto:info@py.amsterdam">
-                        <i class="fas fa-envelope align-middle footer-icon"></i>
-                        info@py.amsterdam
-                    </a></p>
-                    <p><a href="https://twitter.com">
-                        <i class="fab fa-twitter align-middle footer-icon"></i>
-                        @pyamsterdam
-                    </a></p>
-                    <p><a href="https://meetup.com/pyamsterdam">
-                        <i class="fab fa-meetup align-middle footer-icon"></i>
-                        meetup.com/pyamsterdam
-                    </a></p>
-                    <p><a href="https://github.com/PyAmsterdam">
-                        <i class="fab fa-github align-middle footer-icon"></i>
-                        github.com/PyAmsterdam
-                    </a></p>
-                    <p>
-                        <a href="https://pyamsterdam.slack.com">
-                            <i class="fab fa-slack align-middle footer-icon"></i>
-                            pyamsterdam.slack.com
-                        </a></p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <h3 class="mb-4">More information</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <h3 class="mb-4">Join us at Slack</h3>
-                    <img alt="qr-code-slack.svg" src="{{ SITEURL~'/'~THEME_STATIC_DIR~'/img/qr-code-slack.svg' }}"
-                         class="qr-code-slack">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container text-center">
-        <p class="text-white small mb-0 mt-5">&copy; 2019 PyAmsterdam</p>
-    </div>
-</footer>
+{% include 'includes/site_footer.html' %}
 
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded scroll" href="#page-top">
     <i class="fas fa-angle-up"></i>
 </a>
 
-
-{#JS for calendar and bootstrap#}
 {% set js_files = [
-    '/packages/core/main.min.js',
-    '/packages/daygrid/main.min.js',
-    '/packages/core/locales/en-gb.js',
-    '/js/calendar.js',
     '/vendor/jquery/jquery.min.js',
     '/vendor/bootstrap/js/bootstrap.bundle.min.js',
     ] %}
@@ -138,6 +87,9 @@
 {% for file in js_files %}
     <script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
 {% endfor %}
+{#JS for calendar and bootstrap#}
+{% block scripts %}{% endblock %}
+
 
 <!-- jQuery scroll animate-->
 <script>
