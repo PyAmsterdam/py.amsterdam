@@ -13,6 +13,7 @@ To create an event:
 #. Create a meetup.com draft event
 #. `copy the `docs/event_template.rst` into the `content` directory and edit accordingly
 #. Fill in the `rsvp_url` url from `meetup.com` draft event
+#. (optional step) build the site locally -> Local development
 #. Push/Merge the code and wait till the website is built and deployed
 #. Navigate to the `https://py.amsterdam/<date of event>/<event_name>.html`
 #. Get the TXT version for meetup.com
@@ -38,6 +39,13 @@ To create an event:
     * ``:rsvp_url:`` - url where attendees can RSVP - displayed in event detail page
     * ``:external_url: https://somewhere-else.com`` - if specified calendar will redirect to the external page directly
 
+
+Local development
+-----------------
+
+#. ``pip install -r requirements.txt``
+#. ``make html && make serve``
+#. Navigate to ``http://localhost:8000``
 
 
 .. _pelican: https://blog.getpelican.com/
