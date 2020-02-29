@@ -1,5 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyAmsterdam</title><link href="https://pyamsterdam.github.io/website-template/" rel="alternate"></link><link href="https://pyamsterdam.github.io/website-template/feeds/all.atom.xml" rel="self"></link><id>https://pyamsterdam.github.io/website-template/</id><updated>2020-02-17T18:00:00+01:00</updated><entry><title>First meetup</title><link href="https://pyamsterdam.github.io/website-template/2020/02/17/first-meetup.html" rel="alternate"></link><published>2020-02-17T18:00:00+01:00</published><updated>2020-02-17T18:00:00+01:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2020-02-17:/website-template/2020/02/17/first-meetup.html</id><summary type="html">&lt;p&gt;This is the first PyAmsterdam meetup of 2020 together kindly hosted by &lt;a class="reference external" href="https://www.brookz.nl"&gt;Brookz&lt;/a&gt; &lt;a class="footnote-reference" href="#id3" id="id4"&gt;[2]&lt;/a&gt;.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyAmsterdam</title><link href="https://pyamsterdam.github.io/website-template/" rel="alternate"></link><link href="https://pyamsterdam.github.io/website-template/feeds/all.atom.xml" rel="self"></link><id>https://pyamsterdam.github.io/website-template/</id><updated>2020-03-05T18:00:00+01:00</updated><entry><title>A Workshop</title><link href="https://pyamsterdam.github.io/website-template/2020/03/05/a-workshop.html" rel="alternate"></link><published>2020-03-05T18:00:00+01:00</published><updated>2020-03-05T18:00:00+01:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2020-03-05:/website-template/2020/03/05/a-workshop.html</id><summary type="html">&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.
+It was popularised in the 1960s with the release of Letraset sheets containing
+Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+PageMaker including versions of Lorem Ipsum&lt;/p&gt;
+&lt;div class="section" id="about-place"&gt;
+&lt;h2&gt;About Place&lt;/h2&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="schedule"&gt;
+&lt;h2&gt;Schedule&lt;/h2&gt;
+&lt;table border="1" class="schedule-table docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="22%" /&gt;
+&lt;col width="78%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;18:00&lt;/td&gt;
+&lt;td&gt;Welcome&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;18:30&lt;/td&gt;
+&lt;td&gt;First talk: &amp;lt;TBA&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;19:00&lt;/td&gt;
+&lt;td&gt;Second talk: &amp;lt;TBA&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;19:30&lt;/td&gt;
+&lt;td&gt;Small break&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;19:40&lt;/td&gt;
+&lt;td&gt;Lightning talks?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;20:10&lt;/td&gt;
+&lt;td&gt;Networking&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;21:00&lt;/td&gt;
+&lt;td&gt;Closing time&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="python-in-the-mix"&gt;
+&lt;h2&gt;Python in the mix&lt;/h2&gt;
+&lt;p&gt;About &lt;a class="reference external" href="https://github.com/PyAmsterdam"&gt;Author 1&lt;/a&gt; &lt;a class="footnote-reference" href="#id2" id="id3"&gt;[1]&lt;/a&gt;:
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.&lt;/p&gt;
+&lt;div class="section" id="abstract"&gt;
+&lt;h3&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="second-talk"&gt;
+&lt;h2&gt;Second talk&lt;/h2&gt;
+&lt;p&gt;About &lt;a class="reference external" href="https://github.com/PyAmsterdam"&gt;Author 2&lt;/a&gt; &lt;a class="footnote-reference" href="#id2" id="id4"&gt;[1]&lt;/a&gt;
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="links"&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;[1]&lt;/td&gt;&lt;td&gt;&lt;em&gt;(&lt;a class="fn-backref" href="#id3"&gt;1&lt;/a&gt;, &lt;a class="fn-backref" href="#id4"&gt;2&lt;/a&gt;)&lt;/em&gt; &lt;a class="reference external" href="https://github.com/PyAmsterdam"&gt;https://github.com/PyAmsterdam&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content><category term="misc"></category></entry><entry><title>Third Meetup</title><link href="https://pyamsterdam.github.io/website-template/2020/03/05/third-meetup.html" rel="alternate"></link><published>2020-03-05T18:00:00+01:00</published><updated>2020-03-05T18:00:00+01:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2020-03-05:/website-template/2020/03/05/third-meetup.html</id><summary type="html">&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.
+It was popularised in the 1960s with the release of Letraset sheets containing
+Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+PageMaker including versions of Lorem Ipsum&lt;/p&gt;
+&lt;div class="section" id="about-place"&gt;
+&lt;h2&gt;About Place&lt;/h2&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="schedule"&gt;
+&lt;h2&gt;Schedule&lt;/h2&gt;
+&lt;table border="1" class="schedule-table docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="22%" /&gt;
+&lt;col width="78%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;18:00&lt;/td&gt;
+&lt;td&gt;Welcome&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;18:30&lt;/td&gt;
+&lt;td&gt;First talk: &amp;lt;TBA&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;19:00&lt;/td&gt;
+&lt;td&gt;Second talk: &amp;lt;TBA&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;19:30&lt;/td&gt;
+&lt;td&gt;Small break&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;19:40&lt;/td&gt;
+&lt;td&gt;Lightning talks?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;20:10&lt;/td&gt;
+&lt;td&gt;Networking&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;21:00&lt;/td&gt;
+&lt;td&gt;Closing time&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="python-in-the-mix"&gt;
+&lt;h2&gt;Python in the mix&lt;/h2&gt;
+&lt;p&gt;About &lt;a class="reference external" href="https://github.com/PyAmsterdam"&gt;Author 1&lt;/a&gt; &lt;a class="footnote-reference" href="#id2" id="id3"&gt;[1]&lt;/a&gt;:
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.&lt;/p&gt;
+&lt;div class="section" id="abstract"&gt;
+&lt;h3&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="second-talk"&gt;
+&lt;h2&gt;Second talk&lt;/h2&gt;
+&lt;p&gt;About &lt;a class="reference external" href="https://github.com/PyAmsterdam"&gt;Author 2&lt;/a&gt; &lt;a class="footnote-reference" href="#id2" id="id4"&gt;[1]&lt;/a&gt;
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="links"&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;[1]&lt;/td&gt;&lt;td&gt;&lt;em&gt;(&lt;a class="fn-backref" href="#id3"&gt;1&lt;/a&gt;, &lt;a class="fn-backref" href="#id4"&gt;2&lt;/a&gt;)&lt;/em&gt; &lt;a class="reference external" href="https://github.com/PyAmsterdam"&gt;https://github.com/PyAmsterdam&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content><category term="misc"></category></entry><entry><title>First meetup</title><link href="https://pyamsterdam.github.io/website-template/2020/02/17/first-meetup.html" rel="alternate"></link><published>2020-02-17T18:00:00+01:00</published><updated>2020-02-17T18:00:00+01:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2020-02-17:/website-template/2020/02/17/first-meetup.html</id><summary type="html">&lt;p&gt;This is the first PyAmsterdam meetup of 2020 together kindly hosted by &lt;a class="reference external" href="https://www.brookz.nl"&gt;Brookz&lt;/a&gt; &lt;a class="footnote-reference" href="#id3" id="id4"&gt;[2]&lt;/a&gt;.
 No time to hesitate and get back together with your python friends again!&lt;/p&gt;
 &lt;p&gt;Did learn about something cool, want to share what you have created  or
 simply share the struggle with your current project?
