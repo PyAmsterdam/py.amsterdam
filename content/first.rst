@@ -28,11 +28,10 @@ Schedule
 .. table::
    :class: schedule-table
 
-
    ===== =
    18:00 Welcome
-   18:30 First talk: Python in digital humanities research
-   19:00 Second talk: Exploring pytest capabilties
+   18:30 First talk: <TBA>
+   19:00 Second talk: <TBA>
    19:30 Small break
    19:40 Lightning talks?
    20:10 Networking

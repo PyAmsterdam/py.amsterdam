@@ -149,7 +149,6 @@ def write_events(*args, **kwargs):
         )
         txt_path.parent.mkdir(parents=True, exist_ok=True)
         txt_path.write_bytes(text_articles[article.source_path])
-
         events.append(
             {
                 'title': article.metadata.get('event_type', article.title),

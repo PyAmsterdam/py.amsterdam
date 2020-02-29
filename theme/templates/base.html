@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" type="image/png" href="{{ SITEURL~'/'~THEME_STATIC_DIR~'/img/favicon.png' }}"/>
+
+    <title>Python Amsterdam</title>
+
+    {% set css_files = [
+    '/vendor/bootstrap/css/bootstrap.min.css',
+    '/vendor/fontawesome-free/css/all.min.css',
+    '/css/stylish-portfolio.min.css',
+    ] %}
+
+    {% for file in css_files %}
+        <link href="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}" rel="stylesheet"
+              type="text/css">
+    {% endfor %}
+    {% block css %}{% endblock css %}
+    {% with file='/css/style.css' %}
+        <link href="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}" rel="stylesheet"
+              type="text/css">
+    {% endwith %}
+
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700,300italic,400italic,700italic"
+          rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-opacity fixed-top">
+    <div class="container">
+        <a class="navbar-brand scroll" href="#home">
+            <img alt="py.amsterdam-white.svg" src="{{ SITEURL~'/'~THEME_STATIC_DIR~'/img/py.amsterdam-white.svg' }}"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto text-uppercase">
+            {% block nav_items %} {% endblock nav_items %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{#{% set next_section='something' %}#}
+{% if next_section %}
+    {% with next_section = next_section %}
+        {% include 'includes/site_header.html' %}
+    {% endwith %}
+{% else %}
+    {% with next_section = '#who-we-are' %}
+        {% include 'includes/site_header.html' %}
+    {% endwith %}
+{% endif %}
+
+
+
+{% block content %} {% endblock content %}
+
+{% include 'includes/site_footer.html' %}
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded scroll" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+{% set js_files = [
+    '/vendor/jquery/jquery.min.js',
+    '/vendor/bootstrap/js/bootstrap.bundle.min.js',
+    ] %}
+
+{% for file in js_files %}
+    <script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
+{% endfor %}
+{#JS for calendar and bootstrap#}
+{% block scripts %}{% endblock %}
+
+
+<!-- jQuery scroll animate-->
+<script>
+    jQuery(document).ready(function ($) {
+
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({scrollTop: $(this.hash).offset().top - 86}, 800);
+        });
+    });
+</script>
+
+<!-- Plugin JavaScript -->
+{% with file='/vendor/jquery-easing/jquery.easing.min.js' %}
+<script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
+{% endwith %}
+</body>
+
+</html>
