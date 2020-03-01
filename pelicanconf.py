@@ -69,7 +69,7 @@ DELETE_OUTPUT_DIRECTORY = False
 # RELATIVE_URLS = True
 
 PLUGINS = [
-    # 'minchin.pelican.plugins.nojekyll',
+    'minchin.pelican.plugins.nojekyll',
     # 'sitemap',
     'text_generator'
 ]
