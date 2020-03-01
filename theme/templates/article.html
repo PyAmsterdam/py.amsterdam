@@ -25,7 +25,10 @@
                     <h3>{{ article.date.strftime(article.settings.DATE_FORMATS.a) }}</h3>
                 </div>
                 <div class="col-lg-10 mx-auto">
-                    <div class="lead mb-5 article-content">{{ article.content }}</div>
+                    <div class="lead mb-5 article-content">
+                        {{ article.content }}
+                    <a href="{{ SITEURL~'/'~(article.url|replace('.html', '.txt')) }}">Plain text version</a>
+                    </div>
                 </div>
                 {% if article.rsvp_url %}
                     <div class="col-lg-10 mx-auto text-center">
