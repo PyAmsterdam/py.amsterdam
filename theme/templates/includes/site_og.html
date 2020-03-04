@@ -1,0 +1,29 @@
+{% include "includes/meta.html" %}
+{#borrowed from Flex#}
+{% if OG_LOCALE %}
+    {% set default_locale = OG_LOCALE %}
+{% else %}
+    {% set default_locale = 'en_US' %}
+{% endif %}
+<meta property="og:site_name" content="{{ SITENAME }}"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="{{ SITENAME }}"/>
+<meta property="og:description" content="{{ SITEDESCRIPTION }}"/>
+<meta property="og:locale" content="{{ default_locale }}"/>
+<meta property="og:url" content="{{ SITEURL }}"/>
+
+{% if SITELOGO %}
+    <meta property="og:image" content="{{ SITELOGO }}">
+{% endif %}
+
+{% if TWITTER_USER_NAME %}
+    {#Twitter Cards:#}
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="{{ SITENAME }}">
+    <meta name="twitter:description" content="{{ SITEDESCRIPTION }}">
+    {% if SITELOGO %}
+        <meta property="og:image" content="{{ SITELOGO }}">
+    {% endif %}
+    <meta name="twitter:site" content="@{{ TWITTER_USER_NAME }}">
+    <meta name="twitter:creator" content="@{{ TWITTER_USER_NAME }}">
+{% endif %}

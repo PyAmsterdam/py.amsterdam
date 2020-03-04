@@ -1,4 +1,7 @@
 {% extends 'base.html' %}
+{% block meta %}
+    {% include 'includes/site_og.html' %}
+{% endblock meta %}
 {% block css %}
     {% set css_files = [
     '/vendor/fullcalendar/daygrid/4.3.0/main.min.css',

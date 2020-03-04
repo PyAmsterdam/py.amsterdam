@@ -1,4 +1,7 @@
 {% extends 'base.html' %}
+{% block meta %}
+    {% include 'includes/event_og_article.html' %}
+{% endblock meta %}
 {% set next_section = '#event' %}
 {% block nav_items %}
     <li class="nav-item">

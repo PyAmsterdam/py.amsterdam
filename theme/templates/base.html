@@ -5,12 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+{#    <meta name="description" content="">#}
+{#    <meta name="author" content="">#}
+    {% block meta %}{% endblock %}
 
     <link rel="shortcut icon" type="image/png" href="{{ SITEURL~'/'~THEME_STATIC_DIR~'/img/favicon.png' }}"/>
 
-    <title>Python Amsterdam</title>
+    <title>PyAmsterdam: python community website</title>
+    <meta name="keywords" content="PyAmsterdam, Python, Community, Meetup, Event, Workshop"/>
+    <meta name="robots" content="{{ ROBOTS }}"/>
 
     {% if CDN %}
         <link
