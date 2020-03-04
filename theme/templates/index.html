@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block css %}
     {% set css_files = [
-    '/packages/daygrid/main.min.css',
-    '/packages/core/main.min.css',
+    '/vendor/fullcalendar/daygrid/4.3.0/main.min.css',
+    '/vendor/fullcalendar/core/4.3.1/main.min.css',
     ] %}
 
     {% for file in css_files %}
@@ -37,9 +37,9 @@
 
 {% block scripts %}
     {% set js_files = [
-    '/packages/core/main.min.js',
-    '/packages/daygrid/main.min.js',
-    '/packages/core/locales/en-gb.js',
+    '/vendor/fullcalendar/core/4.3.1/main.min.js',
+    '/vendor/fullcalendar/daygrid/4.3.0/main.min.js',
+    '/vendor/fullcalendar/core/locales/en-gb.js',
     '/js/calendar.js',
     ] %}
 

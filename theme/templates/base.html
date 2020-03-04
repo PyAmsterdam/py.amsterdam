@@ -12,16 +12,25 @@
 
     <title>Python Amsterdam</title>
 
-    {% set css_files = [
-    '/vendor/bootstrap/css/bootstrap.min.css',
-    '/vendor/fontawesome-free/css/all.min.css',
-    '/css/stylish-portfolio.min.css',
+    {% if CDN %}
+        <link
+                rel="stylesheet"
+                href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossorigin="anonymous">
+    {% else %}
+        {% set css_files = [
+    '/vendor/bootstrap/4.3.1/css/bootstrap.min.css',
+    '/vendor/fontawesome-free/5.10.2/css/all.min.css',
+    '/css/stylish-portfolio/5.0.7/stylish-portfolio.min.css',
     ] %}
 
-    {% for file in css_files %}
-        <link href="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}" rel="stylesheet"
-              type="text/css">
-    {% endfor %}
+        {% for file in css_files %}
+            <link href="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}" rel="stylesheet"
+                  type="text/css">
+        {% endfor %}
+    {% endif %}
+
     {% block css %}{% endblock css %}
     {% with file='/css/style.css' %}
         <link href="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}" rel="stylesheet"
@@ -51,7 +60,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto text-uppercase">
-            {% block nav_items %} {% endblock nav_items %}
+                {% block nav_items %} {% endblock nav_items %}
             </ul>
         </div>
     </div>
@@ -79,14 +88,28 @@
     <i class="fas fa-angle-up"></i>
 </a>
 
-{% set js_files = [
-    '/vendor/jquery/jquery.min.js',
-    '/vendor/bootstrap/js/bootstrap.bundle.min.js',
+{% if CDN %}
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+{% else %}
+    {% set js_files = [
+    '/vendor/jquery/3.4.1/jquery.min.js',
+    '/vendor/bootstrap/4.3.1/js/bootstrap.bundle.min.js',
     ] %}
 
-{% for file in js_files %}
-    <script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
-{% endfor %}
+    {% for file in js_files %}
+        <script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
+    {% endfor %}
+
+{% endif %}
+
+
+
 {#JS for calendar and bootstrap#}
 {% block scripts %}{% endblock %}
 
@@ -103,8 +126,8 @@
 </script>
 
 <!-- Plugin JavaScript -->
-{% with file='/vendor/jquery-easing/jquery.easing.min.js' %}
-<script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
+{% with file='/vendor/jquery-easing/1.4.1/jquery.easing.min.js' %}
+    <script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
 {% endwith %}
 </body>
 
