@@ -1,3 +1,7 @@
+.masthead {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.6) 100%), url(../img/flag.png);
+}
+
 .navbar-brand img {
   width: 56%;
 }
