@@ -1,0 +1,56 @@
+n = 5; f"{n}th meetup at KPN"
+=============================
+
+We are happy to announce the fifth instance [1] of the PyAmsterdam
+meetup, kindly hosted by KPN [2].
+
+This time we are glad to have a special guest: The co-founder of Read
+the Docs [3] and Write the Docs [4] and member of the PSF [5] board,
+Eric Holscher [6].
+
+Important:
+
+We are currently looking for talks and speakers. The call for
+proposals will be open until October 31.
+
+To submit a talk you can: Create PullRequest at:
+https://github.com/PyAmsterdam/py-meetups Or send us and e-mail to
+info@py.amsterdam.
+
+In case you would like to share something cool but do not feel like
+giving a long talk, there is also an option for a lightning talk (5
+minutes max).
+
+
+Schedule
+--------
+
++-------+------------------------------------------------------------+
+| 18:00 | Welcome with drinks and food                               |
++-------+------------------------------------------------------------+
+| 19:00 | Python decorators 101 - Denis Kovalev                      |
++-------+------------------------------------------------------------+
+| 19:30 | 15 min break                                               |
++-------+------------------------------------------------------------+
+| 19:45 | Read the Docs & Python Software Foundation - Eric Holscher |
++-------+------------------------------------------------------------+
+| 20:30 | Networking                                                 |
++-------+------------------------------------------------------------+
+| 21:00 | Closing time                                               |
++-------+------------------------------------------------------------+
+
+
+Links
+-----
+
+[1] https://meetup.com
+
+[2] https://www.kpn.com/
+
+[3] https://readthedocs.org/
+
+[4] https://www.writethedocs.org/
+
+[5] https://www.python.org/psf/
+
+[6] https://twitter.com/ericholscher

@@ -1,0 +1,94 @@
+iter() - PyAmsterdam meetup at 3dHubs
+=====================================
+
+We are happy to announce the third instance [1] of the PyAmsterdam
+meetup. This event will be kindly hosted by 3dHubs [2]. This time we
+are preparing 2 talks. Next to it Jan want's to present a recap of
+PyconCZ 2019.
+
+
+Schedule
+--------
+
++-------+---------------------------------------------------------------------------+
+| 18:30 | Welcome with drinks and food                                              |
++-------+---------------------------------------------------------------------------+
+| 19:00 | First talk: by 3DHubs                                                     |
++-------+---------------------------------------------------------------------------+
+| 19:30 | Small break                                                               |
++-------+---------------------------------------------------------------------------+
+| 19:50 | Second talk: Practical patterns in distributed systems, ybrs [3]          |
++-------+---------------------------------------------------------------------------+
+| 20:30 | Third talk: What can we learn from PyconCZ [4] and Czech python           |
+|       | community?                                                                |
++-------+---------------------------------------------------------------------------+
+| 20:50 | Networking                                                                |
++-------+---------------------------------------------------------------------------+
+| 21:30 | Closing time                                                              |
++-------+---------------------------------------------------------------------------+
+
+
+Python in 3d Hubs
+-----------------
+
+By Andres Felipe Ruiz Cardozo [6]
+
+
+Practical patterns in distributed systems
+-----------------------------------------
+
+Practical patterns in distributed systems for mere mortals, aka.
+patterns for microservices By Aybars Badour
+
+
+Abstract
+--------
+
+This is an introductory talk for some practical patterns that can be
+used in a distributed service architectures, such as -
+Queues/workflows/routing slips - Audit logs - Event driven
+architecture - Change-Data-Capture - Event sourcing - CQRS -
+Distributed locks - Sagas
+
+I will try to explain ways to deal with eventual consistency, race
+conditions in distributed systems.
+
+Patterns are basic building blocks for any system. Usually when people
+talk about patterns, they treat them as sacred, unalterable,
+invariable, permanent things. Although they definetly evolve, you can
+interpret them in many different ways, or you can just use some parts
+of a pattern, skipping all the dogma surrounding them.
+
+
+PyconCZ 2019
+------------
+
+by Jan Gazda [5]
+
+What can we learn from PyconCZ and Czech python community?
+
+
+Abstract
+--------
+
+Every year I visit my home country to attend PyconCZ [4] and meet with
+my PyFriends. There are always interesting topics but few stand out
+and I'd like to share those with you. I will also to give you a closer
+look at how we organize our community in Czech Republic and how this
+could help our Amsterdam community.
+
+
+Links
+-----
+
+[1] https://www.meetup.com/PyAmsterdam/events/262819092/
+
+[2] https://www.3dhubs.com/contact
+
+[3] https://github.com/ybrs
+
+[4] https://cz.pycon.org/2019/
+
+[5] https://github.com/1oglop1
+
+[6] https://github.com/afruizc

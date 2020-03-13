@@ -1,5 +1,5 @@
-First meetup
-============
+__add__(self, Brookz) # Python meetup!
+======================================
 
 This is the first PyAmsterdam meetup of 2020 together kindly hosted by
 Brookz [2]. No time to hesitate and get back together with your python
@@ -108,12 +108,6 @@ My intention with this talk is to help people understand how tests can
 help us write better code and how it can guide our designs. In this
 opportunity I'll show how to do this using pytest, and get most of its
 power.
-
-* List
-
-* List3
-
-* List2
 
 
 Links
