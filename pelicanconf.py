@@ -36,11 +36,11 @@ JINJA_FILTERS = {
 CUR_DIR = Path(__file__).parent.absolute()
 AUTHOR = 'PyAmsterdam'
 SITENAME = 'PyAmsterdam'
+TWITTER_USER_NAME = 'PyAmsterdam'
 SITEDESCRIPTION = 'PyAmsterdam is a community of Python users gathering for meetups and workshops in Amsterdam.'
 SITEPORT = os.environ.get("SITEPORT", "8000")
 SITEURL = os.environ.get("SITEURL", f"http://localhost:{SITEPORT}")
-CDN = os.environ.get('CDN', False)
-
+CDN = bool(os.environ.get('CDN', False))
 PATH = 'content'
 ROBOTS = 'index, follow'
 

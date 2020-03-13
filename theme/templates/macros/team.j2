@@ -1,19 +1,23 @@
 {% macro team_member(
         name=None,
-        avatar_path=None,
+        avatar_path='',
+        position='',
         socials={}
     )
 -%}
-    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+{#    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">#}
+    <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
     <span class="service-icon rounded-circle mx-auto mb-3">
-        {% if avatar_path %}
-            <img src="{{ (SITEURL~'/'~THEME_STATIC_DIR~avatar_path)|cachebust(THEME~'/static'~avatar_path) }}" class="rounded-circle"/>
+        {% if avatar_path.startswith('/') %}
+            <img alt="Member Photo" src="{{ (SITEURL~'/'~THEME_STATIC_DIR~avatar_path)|cachebust(THEME~'/static'~avatar_path) }}" class="rounded-circle"/>
+        {% elif avatar_path.startswith('http') %}
+            <img alt="Member Photo" src="{{ avatar_path }}" class="rounded-circle"/>
         {% else %}
             <img src="{{ SITEURL~'/'~THEME_STATIC_DIR~'/img/avatar.png' }}" class="rounded-circle"/>
         {% endif %}
     </span>
     <h5>{{ name }}</h5>
-    <p class="text-faded mb-3 text-dark">{{SITEURL}}</p>
+    <p class="text-faded mb-3 text-dark">{{ position }}</p>
     <ul class="list-inline">
         {% for fa_social, url in socials.items() %}
             <li class="list-inline-item">

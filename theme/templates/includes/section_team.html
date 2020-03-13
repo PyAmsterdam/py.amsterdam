@@ -9,15 +9,29 @@
         </div>
         <div class="row team">
             {{ team_member(
-            name='Jan Gazda',
-            avatar_path='/img/flag.png',
-            socials={
-                'fa-github':'https://github.com/1oglop1/',
-                'fa-linkedin-in':'https://www.linkedin.com/in/jangazda/'}
-            ) }}
-            {{ team_member(name='Nico', socials={'fa-github':'gh', 'fa-linkedin-in':'li'}) }}
-            {{ team_member(name='Wojtek', socials={'fa-github':'gh'}) }}
-            {{ team_member(name='You', socials={'fa-github':'gh','fa-gitlab':'gh', 'fa-linkedin-in':'li'}) }}
+                name='Jan Gazda',
+                avatar_path='https://avatars1.githubusercontent.com/u/7480694?s=460&v=4',
+                position = 'Co-founder',
+                socials={
+                    'fa-github':'https://github.com/1oglop1/',
+                    'fa-linkedin-in':'https://www.linkedin.com/in/jangazda/'}
+                )
+            }}
+            {{ team_member(
+                name='Nicolás Demarchi',
+                position='Co-organiser',
+                avatar_path='https://ac.python.org.ar/images/cd/00003.jpg',
+                socials={'fa-github':'https://github.com/vojtekb', 'fa-linkedin-in':'https://www.linkedin.com/in/nicolasdemarchi/'}
+                )
+            }}
+            {{ team_member(
+                name='Wojtek Burakiewicz',
+                position = 'Co-founder',
+                avatar_path='/img/avatar_wojtek.jpeg',
+                socials={'fa-github':'https://github.com/gilgamezh', 'fa-linkedin-in': 'https://www.linkedin.com/in/wojtekb/'})
+
+            }}
+{#            {{ team_member(name='You', socials={'fa-github':'gh','fa-gitlab':'gh', 'fa-linkedin-in':'li'}) }}#}
         </div>
     </div>
 </section>

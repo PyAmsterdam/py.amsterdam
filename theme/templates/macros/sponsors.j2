@@ -1,0 +1,32 @@
+{% macro add_sponsors(
+        sponsors={}
+    )
+-%}
+    {% set le = sponsors|length %}
+    {% set co = cycler('1','2') %}
+
+    {% set ns=namespace(col1='',col2='') %}
+
+    {% for sponsor, description in sponsors.items() %}
+        {% set cy = loop.cycle('a','b') %}
+        {% if cy == 'a' %}
+            {%  set ns.col1= ns.col1~'<li>'~sponsor~' - '~description~'</li>' %}
+        {% elif cy == 'b' %}
+            {%  set ns.col2= ns.col2~'<li>'~sponsor~' - '~description~'</li>' %}
+        {% endif %}
+    {% endfor %}
+    <div class="col-12 col-md-6">
+        <ul>
+            {{ ns.col1 }}
+        </ul>
+    </div>
+    <div class="col-12 col-md-6">
+        <ul>
+            {{ ns.col2 }}
+{#            <li>Sponsor - Some information. <a href="#">Some link</a></li>#}
+{#            <li>Sponsor - Some information. <a href="#">Some link</a></li>#}
+{#            <li>Sponsor - Some information. <a href="#">Some link</a></li>#}
+{#            <li>Sponsor - Some information. <a href="#">Some link</a></li>#}
+        </ul>
+    </div>
+{%- endmacro %}

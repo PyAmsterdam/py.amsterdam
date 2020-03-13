@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% block meta %}
+
+    <title>PyAmsterdam: python community website</title>
+    <meta name="keywords" content="PyAmsterdam, Python, Community, Meetup, Event, Workshop"/>
+    <meta name="robots" content="{{ ROBOTS }}"/>
     {% include 'includes/event_og_article.html' %}
+
 {% endblock meta %}
 {% set next_section = '#event' %}
 {% block nav_items %}
@@ -30,7 +35,7 @@
                 <div class="col-lg-10 mx-auto">
                     <div class="lead mb-5 article-content">
                         {{ article.content }}
-                    <a href="{{ SITEURL~'/'~(article.url|replace('.html', '.txt')) }}">Plain text version</a>
+                        <a href="{{ SITEURL~'/'~(article.url|replace('.html', '.txt')) }}">Plain text version</a>
                     </div>
                 </div>
                 {% if article.rsvp_url %}

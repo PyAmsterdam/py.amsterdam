@@ -1,3 +1,4 @@
+{% from 'macros/sponsors.j2' import add_sponsors with context %}
 <!-- Sponsors -->
 <section class="content-section" id="sponsors">
     <div class="container">
@@ -8,26 +9,32 @@
                 <a class="scroll" href="#contact">Contact us!</a>
             </p>
         </div>
-{#        <div class="row">#}
-{#            <p>Would you like to see your name or name of your company? Contact us!</p>#}
-{#        </div>#}
+
         <div class="row pt-5">
-            <div class="col-12 col-md-6">
-                <ul>
-                    <li>Sponsor - Some information. <a href="#">Some link</a></li>
-                    <li>Sponsor - Some information. <a href="#">Some link</a></li>
-                    <li>Sponsor - Some information. <a href="#">Some link</a></li>
-                    <li>Sponsor - Some information. <a href="#">Some link</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-6">
-                <ul>
-                    <li>Sponsor - Some information. <a href="#">Some link</a></li>
-                    <li>Sponsor - Some information. <a href="#">Some link</a></li>
-                    <li>Sponsor - Some information. <a href="#">Some link</a></li>
-                    <li>Sponsor - Some information. <a href="#">Some link</a></li>
-                </ul>
-            </div>
+        {{ add_sponsors(
+                {
+                    '<a href="https://www.optiver.com">Optiver</a>': 'provided a meeting space',
+                    '<a href="https://www.crunchrapps.com">Crunchr</a>': 'provided a meeting space',
+                    '<a href="https://www.3dhubs.com">3D Hubs</a>': 'provided a meeting space',
+                    '<a href="https://picnic.app">Picnic</a>': 'provided a meeting space',
+                    '<a href="https://www.kpn.com">KPN</a>': 'provided a meeting space',
+                    '<a href="https://www.brookz.nl">Brookz</a>': 'provided a meeting space',
+                    'Sander van de Graaf': 'Talk: Detecting Outages at Scale',
+                    'Dinis Louseiro': 'Data Warehouse Automation in Python',
+                    'Daniel Bradburn': 'Battle testing your web API using OpenAPI and hypothesis',
+                    'Aybars Badour': 'Practical patterns in distributed systems for mere mortals (aka. patterns for microservices)',
+                    'Marc Wagner': 'Using micropython in IOT devices',
+                    'Jan van der Vegt': 'Industrialization of Machine Learning models is a complex task.',
+                    'Cornelis van Lit': 'Python in digital humanities research',
+                    'Santiago Fraire Willemoes': 'Exploring pytest capabilties',
+                    'Łukasz Langa': 'AsyncIO + Music',
+                    'Eric Holscher': 'About Read The docs and The Python Software Foundation',
+                    'Olga Sentemova': 'Getting started with FPGA with Python',
+                    'Mikaeil Orfanian': 'Architecture for Everyday Programming',
+                    'Joost Lek': 'Python 2 vs. Python 3: How to Navigate the Change',
+                }
+            )
+        }}
         </div>
     </div>
 </section>
