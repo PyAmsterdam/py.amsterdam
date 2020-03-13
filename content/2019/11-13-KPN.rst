@@ -1,0 +1,59 @@
+n = 5; f"{n}th meetup at KPN"
+===============================
+
+:event_type: Meetup
+:rsvp_url: https://www.meetup.com/PyAmsterdam/events/265665270/
+:date: 2020-11-13 18:00
+
+.. .. image:: /resources/images/pyamsterdam_kpn.png
+
+
+We are happy to announce the `fifth instance`_ of the PyAmsterdam meetup,
+kindly hosted by `KPN`_.
+
+This time we are glad to have a special guest:
+The co-founder of `Read the Docs`_ and `Write the Docs`_ and member of the `PSF`_ board, `Eric Holscher`_.
+
+
+.. .. image:: /resources/images/ericholscher.png
+
+
+.. IMPORTANT::
+
+  We are currently looking for talks and speakers.
+  The call for proposals will be open until October 31.
+
+To submit a talk you can:
+Create PullRequest at: https://github.com/PyAmsterdam/py-meetups
+Or send us and e-mail to info@py.amsterdam.
+
+In case you would like to share something cool but do not feel like giving a long talk,
+there is also an option for a lightning talk (5 minutes max).
+
+Schedule
+------------------------
+
+.. table::
+   :class: schedule-table
+
+   ===== =
+   18:00 Welcome with drinks and food
+   19:00 Python decorators 101 - Denis Kovalev
+   19:30 15 min break
+   19:45 Read the Docs & Python Software Foundation - Eric Holscher
+   20:30 Networking
+   21:00 Closing time
+   ===== =
+
+
+Links
+-----
+
+.. _fifth instance: https://meetup.com
+.. _KPN: https://www.kpn.com/
+.. _Read the Docs: https://readthedocs.org/
+.. _Write the Docs: https://www.writethedocs.org/
+.. _PSF: https://www.python.org/psf/
+.. _Eric Holscher: https://twitter.com/ericholscher
+
+.. target-notes::
