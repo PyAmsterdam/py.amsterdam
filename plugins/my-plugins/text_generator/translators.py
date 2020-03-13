@@ -488,8 +488,8 @@ class TextTranslator(nodes.NodeVisitor):
 
     def visit_image(self, node: nodes.Element) -> None:
         if "alt" in node.attributes:
-            self.add_text(_("[image: %s]") % node["alt"])
-        self.add_text(_("[image]"))
+            self.add_text("[image: %s]" % node["alt"])
+        self.add_text("[image]")
         raise nodes.SkipNode
 
     def visit_transition(self, node: nodes.Element) -> None:
