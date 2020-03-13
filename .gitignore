@@ -2,7 +2,7 @@
 output/
 public/
 whoosh_index/
-theme/static/js/calendar.js
+/theme/static/js/calendar.js
 
 # secret files
 *.pem
