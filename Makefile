@@ -76,3 +76,6 @@ publish:
 
 clean-nas:  ## Clean files duplicated by Synology DS
 	find . -type f -name "*_DiskStation_*" -exec rm {} \;
+
+now: clean publish
+	cp -r now/ $(OUTPUTDIR)
