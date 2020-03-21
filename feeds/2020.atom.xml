@@ -1,5 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyAmsterdam - 2020</title><link href="https://pyamsterdam.github.io/website-template/" rel="alternate"></link><link href="https://pyamsterdam.github.io/website-template/feeds/2020.atom.xml" rel="self"></link><id>https://pyamsterdam.github.io/website-template/</id><updated>2020-02-17T18:00:00+01:00</updated><entry><title>__add__(self, Brookz) # Python meetup!</title><link href="https://pyamsterdam.github.io/website-template/2020/02/17/__add__self-brookz-python-meetup.html" rel="alternate"></link><published>2020-02-17T18:00:00+01:00</published><updated>2020-02-17T18:00:00+01:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2020-02-17:/website-template/2020/02/17/__add__self-brookz-python-meetup.html</id><summary type="html">&lt;p&gt;This is the first PyAmsterdam meetup of 2020 together kindly hosted by &lt;a class="reference external" href="https://www.brookz.nl"&gt;Brookz&lt;/a&gt; &lt;a class="footnote-reference" href="#id3" id="id4"&gt;[2]&lt;/a&gt;.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyAmsterdam - 2020</title><link href="https://pyamsterdam.github.io/website-template/" rel="alternate"></link><link href="https://pyamsterdam.github.io/website-template/feeds/2020.atom.xml" rel="self"></link><id>https://pyamsterdam.github.io/website-template/</id><updated>2020-03-25T19:00:00+01:00</updated><entry><title>[VIRTUAL] Py.Amsterdam from home! #quarantine</title><link href="https://pyamsterdam.github.io/website-template/2020/03/25/virtual-pyamsterdam-from-home-quarantine.html" rel="alternate"></link><published>2020-03-25T19:00:00+01:00</published><updated>2020-03-25T19:00:00+01:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2020-03-25:/website-template/2020/03/25/virtual-pyamsterdam-from-home-quarantine.html</id><summary type="html">&lt;!-- python -m http.server 2503 - -bind py.amsterdam --&gt;
+&lt;p&gt;Are you dealing with isolation due to COVID-19?
+Are you missing your friends from the Python community?
+PyAmsterdam is also moving online to help you!&lt;/p&gt;
+&lt;p&gt;This is going to be our first online meetup and we have two amazing speakers!&lt;/p&gt;
+&lt;div class="section" id="about-optiver"&gt;
+&lt;h2&gt;About Optiver&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.optiver.com/eu/en/"&gt;Optiver&lt;/a&gt; &lt;a class="footnote-reference" href="#id2" id="id3"&gt;[1]&lt;/a&gt; hosted our first meetup in 2019 …&lt;/p&gt;&lt;/div&gt;</summary><content type="html">&lt;!-- python -m http.server 2503 - -bind py.amsterdam --&gt;
+&lt;p&gt;Are you dealing with isolation due to COVID-19?
+Are you missing your friends from the Python community?
+PyAmsterdam is also moving online to help you!&lt;/p&gt;
+&lt;p&gt;This is going to be our first online meetup and we have two amazing speakers!&lt;/p&gt;
+&lt;div class="section" id="about-optiver"&gt;
+&lt;h2&gt;About Optiver&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://www.optiver.com/eu/en/"&gt;Optiver&lt;/a&gt; &lt;a class="footnote-reference" href="#id2" id="id3"&gt;[1]&lt;/a&gt; hosted our first meetup in 2019 and
+a year later they are sponsoring our first online meetup.
+Thank you!
+Optiver is a leading technology-based trading firm with over one thousand people globally,
+united in our mission to improve the market.
+We provide liquidity using our capital, at our own risk,
+trading in tens of thousands of financial instruments on more than 50 exchanges around the world.
+Engineering is at the core of our trading strategies.
+We build and maintain low latency trading systems that respond to market events in nanoseconds.
+Crucial to our success is the precision, reliability and speed of our systems.
+Our engineers continually refine, store, and analyse hundreds of terabytes of data,
+enabling us to automatically price large, diverse sets of financial instruments with extremely low error tolerance.
+To do this we use sophisticated technology and large-scale systems.
+Our infrastructure is a combination of 10 000 highly customised components and
+600 different applications running on 1500 servers, distributed globally.
+Check their &lt;a class="reference external" href="https://www.optiver.com/eu/en/job-opportunities/all/Technology/Amsterdam/"&gt;current open positions&lt;/a&gt; &lt;a class="footnote-reference" href="#id4" id="id5"&gt;[2]&lt;/a&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="schedule"&gt;
+&lt;h2&gt;Schedule&lt;/h2&gt;
+&lt;table border="1" class="schedule-table docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="5%" /&gt;
+&lt;col width="95%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;19:00&lt;/td&gt;
+&lt;td&gt;Intro&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;19:15&lt;/td&gt;
+&lt;td&gt;How to be Pythonic? Design a Query Language in Python (Cheuk Ting Ho)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;20:00&lt;/td&gt;
+&lt;td&gt;Building community and the impact of COVID-19 on the PSF/PyCon and its community work (Naomi Ceder)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;21:00&lt;/td&gt;
+&lt;td&gt;Lightning talks&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;21:30&lt;/td&gt;
+&lt;td&gt;Closing (if no further interest)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-to-be-pythonic-design-a-query-language-in-python"&gt;
+&lt;h2&gt;How to be Pythonic? Design a Query Language in Python&lt;/h2&gt;
+&lt;p&gt;About &lt;a class="reference external" href=":https://cheuk.dev/"&gt;Cheuk Ting Ho&lt;/a&gt; &lt;a class="footnote-reference" href="#id6" id="id7"&gt;[3]&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;After having a career in data science,
+Cheuk now brings her knowledge in data and
+passion for the tech community into TerminusDB as the developer relations lead.
+Cheuk constantly contributes to the open-source community by giving AI and
+deep learning workshops and organize sprints to encourage diversity contributions.
+You can also find her at twitter via &lt;a class="reference external" href="https://twitter.com/cheukting_ho"&gt;&amp;#64;cheukting_ho&lt;/a&gt; &lt;a class="footnote-reference" href="#id12" id="id13"&gt;[6]&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="abstract"&gt;
+&lt;h3&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;We created Python API calls that let you can make queries and manipulate data in our graph database.
+We thought about what will be best for Pythonistas?
+What will be the most Pythonic way to do it?
+(Is it a thing?) Here’s our journey in making WOQLpy and we want to make it useful to you.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="building-community-and-the-impact-of-covid-19-on-the-psf-pycon-and-its-community-work"&gt;
+&lt;h2&gt;Building community and the impact of COVID-19 on the PSF/PyCon and its community work&lt;/h2&gt;
+&lt;p&gt;About &lt;a class="reference external" href="https://www.naomiceder.tech/"&gt;Naomi Ceder&lt;/a&gt; &lt;a class="footnote-reference" href="#id8" id="id9"&gt;[4]&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Naomi Ceder earned a PhD in Classics several decades ago but
+switched from ancient human languages to computer languages sometime in the last century.
+Since 2001, she has been learning, teaching, writing about, and using Python.&lt;/p&gt;
+&lt;p&gt;An elected fellow of the Python Software Foundation, Naomi currently serves as chair of
+its board of directors. She also speaks internationally about the Python community,
+and on inclusion and diversity in technology in general.&lt;/p&gt;
+&lt;p&gt;By day she leads a team of Python programmers for Dick Blick Art Materials,
+and in her spare time, she enjoys sketching, knitting, and deep philosophical
+conversations with her dog.
+You can follow her at twitter &lt;a class="reference external" href="https://twitter.com/NaomiCeder"&gt;&amp;#64;NaomiCeder&lt;/a&gt; &lt;a class="footnote-reference" href="#id10" id="id11"&gt;[5]&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;This talk is really good, trust me!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="links"&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://www.optiver.com/eu/en/"&gt;https://www.optiver.com/eu/en/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://www.optiver.com/eu/en/job-opportunities/all/Technology/Amsterdam/"&gt;https://www.optiver.com/eu/en/job-opportunities/all/Technology/Amsterdam/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id7"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href=":https://cheuk.dev/"&gt;:https://cheuk.dev/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id9"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://www.naomiceder.tech/"&gt;https://www.naomiceder.tech/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id10" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id11"&gt;[5]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://twitter.com/NaomiCeder"&gt;https://twitter.com/NaomiCeder&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id12" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id13"&gt;[6]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://twitter.com/cheukting_ho"&gt;https://twitter.com/cheukting_ho&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content><category term="2020"></category></entry><entry><title>__add__(self, Brookz) # Python meetup!</title><link href="https://pyamsterdam.github.io/website-template/2020/02/17/__add__self-brookz-python-meetup.html" rel="alternate"></link><published>2020-02-17T18:00:00+01:00</published><updated>2020-02-17T18:00:00+01:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2020-02-17:/website-template/2020/02/17/__add__self-brookz-python-meetup.html</id><summary type="html">&lt;p&gt;This is the first PyAmsterdam meetup of 2020 together kindly hosted by &lt;a class="reference external" href="https://www.brookz.nl"&gt;Brookz&lt;/a&gt; &lt;a class="footnote-reference" href="#id3" id="id4"&gt;[2]&lt;/a&gt;.
 No time to hesitate and get back together with your python friends again!&lt;/p&gt;
 &lt;p&gt;Did learn about something cool, want to share what you have created  or
 simply share the struggle with your current project?
