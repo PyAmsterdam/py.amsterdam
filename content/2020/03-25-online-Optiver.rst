@@ -1,7 +1,5 @@
-[VIRTUAL] Py.Amsterdam from home! #quarantine
-==============================================
-
-.. python -m http.server 2503 --bind py.amsterdam
+[VIRTUAL] Py.Amsterdam from home! #StayAtHome
+=============================================
 
 :event_type: Meetup
 :rsvp_url: https://www.meetup.com/PyAmsterdam/events/269508542/
@@ -12,6 +10,8 @@ Are you missing your friends from the Python community?
 PyAmsterdam is also moving online to help you!
 
 This is going to be our first online meetup and we have two amazing speakers!
+
+Join the meetup using this `Zoom meeting link`_
 
 About Optiver
 -------------
@@ -93,11 +93,15 @@ You can follow her at twitter `@NaomiCeder`_
 Abstract
 ~~~~~~~~
 
-This talk is really good, trust me!
+The past few weeks have been difficult for tech communities in general
+and for the Python community. I'll talk a little about the importance
+of building communities and give some background on how the PSF is
+dealing with the current situation, and answer questions.
 
 Links
 -----
 
+.. _Zoom meeting link: https://zoom.us/j/921378848
 .. _Optiver: https://www.optiver.com/eu/en/
 .. _current open positions: https://www.optiver.com/eu/en/job-opportunities/all/Technology/Amsterdam/
 .. _Cheuk Ting Ho: : https://cheuk.dev/
