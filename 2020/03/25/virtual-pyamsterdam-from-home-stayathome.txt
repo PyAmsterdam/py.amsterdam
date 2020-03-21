@@ -1,4 +1,4 @@
-[VIRTUAL] Py.Amsterdam from home! #quarantine
+[VIRTUAL] Py.Amsterdam from home! #StayAtHome
 =============================================
 
 Are you dealing with isolation due to COVID-19? Are you missing your
@@ -8,11 +8,13 @@ to help you!
 This is going to be our first online meetup and we have two amazing
 speakers!
 
+Join the meetup using this Zoom meeting link [1]
+
 
 About Optiver
 -------------
 
-Optiver [1] hosted our first meetup in 2019 and a year later they are
+Optiver [2] hosted our first meetup in 2019 and a year later they are
 sponsoring our first online meetup. Thank you! Optiver is a leading
 technology-based trading firm with over one thousand people globally,
 united in our mission to improve the market. We provide liquidity
@@ -27,7 +29,7 @@ price large, diverse sets of financial instruments with extremely low
 error tolerance. To do this we use sophisticated technology and large-
 scale systems. Our infrastructure is a combination of 10 000 highly
 customised components and 600 different applications running on 1500
-servers, distributed globally. Check their current open positions [2]:
+servers, distributed globally. Check their current open positions [3]:
 
 
 Schedule
@@ -49,14 +51,14 @@ Schedule
 How to be Pythonic? Design a Query Language in Python
 -----------------------------------------------------
 
-About Cheuk Ting Ho [3]:
+About Cheuk Ting Ho [4]:
 
 After having a career in data science, Cheuk now brings her knowledge
 in data and passion for the tech community into TerminusDB as the
 developer relations lead. Cheuk constantly contributes to the open-
 source community by giving AI and deep learning workshops and organize
 sprints to encourage diversity contributions. You can also find her at
-twitter via @cheukting_ho [6]
+twitter via @cheukting_ho [7]
 
 
 Abstract
@@ -72,7 +74,7 @@ it useful to you.
 Building community and the impact of COVID-19 on the PSF/PyCon and its community work
 -------------------------------------------------------------------------------------
 
-About Naomi Ceder [4]:
+About Naomi Ceder [5]:
 
 Naomi Ceder earned a PhD in Classics several decades ago but switched
 from ancient human languages to computer languages sometime in the
@@ -87,27 +89,32 @@ diversity in technology in general.
 By day she leads a team of Python programmers for Dick Blick Art
 Materials, and in her spare time, she enjoys sketching, knitting, and
 deep philosophical conversations with her dog. You can follow her at
-twitter @NaomiCeder [5]
+twitter @NaomiCeder [6]
 
 
 Abstract
 ~~~~~~~~
 
-This talk is really good, trust me!
+The past few weeks have been difficult for tech communities in general
+and for the Python community. I'll talk a little about the importance
+of building communities and give some background on how the PSF is
+dealing with the current situation, and answer questions.
 
 
 Links
 -----
 
-[1] https://www.optiver.com/eu/en/
+[1] https://zoom.us/j/921378848
 
-[2] https://www.optiver.com/eu/en/job-
+[2] https://www.optiver.com/eu/en/
+
+[3] https://www.optiver.com/eu/en/job-
     opportunities/all/Technology/Amsterdam/
 
-[3] :https://cheuk.dev/
+[4] :https://cheuk.dev/
 
-[4] https://www.naomiceder.tech/
+[5] https://www.naomiceder.tech/
 
-[5] https://twitter.com/NaomiCeder
+[6] https://twitter.com/NaomiCeder
 
-[6] https://twitter.com/cheukting_ho
+[7] https://twitter.com/cheukting_ho
