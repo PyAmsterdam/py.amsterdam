@@ -11,14 +11,14 @@ Events are pelican articles written in RST inside `content` directory.
 To create an event:
 
 #. Create a meetup.com draft event
-#. `copy the `docs/event_template.rst` into the `content` directory and edit accordingly
-#. Fill in the `rsvp_url` url from `meetup.com` draft event
+#. copy the ``docs/event_template.rst`` into the ``content`` directory and edit accordingly
+#. Fill in the ``rsvp_url`` url from ``meetup.com`` draft event
 #. (optional step) build the site locally -> Local development
 #. Push/Merge the code and wait till the website is built and deployed
-#. Navigate to the `https://py.amsterdam/<date of event>/<event_name>.html`
+#. Navigate to the ``https://py.amsterdam/<date of event>/<event_name>.html``
 #. Get the TXT version for meetup.com
 
-   #. In browser address bar: change the `.html` to txt
+   #. Go to the event page, scroll down and click ``Plain text version``
    #. Copy the content
    #. Go to your Draft event and paste
 
@@ -47,6 +47,14 @@ Local development
 #. ``make html && make serve``
 #. Navigate to ``http://localhost:8000``
 
+Deploy dev version:
+-------------------
+
+At the moment dev version deployment is best to do to GH pages.
+
+#. ``pip install -r requirements.txt``
+#. ``invoke gh-pages``
+#. Navigate to: https://pyamsterdam.github.io/py.amsterdam
 
 .. _pelican: https://blog.getpelican.com/
 
