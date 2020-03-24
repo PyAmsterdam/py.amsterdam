@@ -11,6 +11,12 @@ PyAmsterdam is also moving online to help you!
 
 This is going to be our first online meetup and we have two amazing speakers!
 
+
+.. image:: {static}images/online_meetup_high-res.png
+  :alt: Python Online meetup March 2020
+  :width: 80%
+  :align: center
+
 Join the meetup using this `Zoom meeting link`_
 
 About Optiver
