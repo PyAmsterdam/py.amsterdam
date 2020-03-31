@@ -4,16 +4,15 @@ range(4) - the fourth meetup at Picnic
 :event_type: Meetup
 :rsvp_url: https://www.meetup.com/PyAmsterdam/events/263916105/
 :date: 2019-09-26 18:00
-
-.. .. figure:: {static}images/pyamsterdam_picnic.png
-   :alt: pyamsterdam_picnic.png
-
-.. .. image:: /resources/images/pyamsterdam_picnic.png
-
+:cover: images/pyamsterdam_picnic.png
 
 We are happy to announce the `fourth instance`_ of the PyAmsterdam meetup.
 This event will be kindly hosted by `Picnic`_,
 make sure to check out their meetup group for other events. https://www.meetup.com/Meetinup-Picnic/
+
+.. figure:: {attach}/images/pyamsterdam_picnic.png
+   :alt: pyamsterdam_picnic.png
+   :width: 80%
 
 
 We are currently looking for talks and speakers.

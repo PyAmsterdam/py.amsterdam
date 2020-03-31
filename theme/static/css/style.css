@@ -217,4 +217,9 @@ footer a:hover {
   margin-bottom: 1rem;
 }
 
+.figure img {
+  display: block;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,13 @@
 :event_type: Meetup
 :rsvp_url: https://externalLink.com
 :date: 2020-02-17 18:00
+:cover: images/path_to_image.img
+
+.. cover image is for SEO meta tags, to add actual image to the article use .. figure::
+
+.. figure:: {static}/images/img.png
+  :alt: Python Online meetup March 2020
+  :width: 80%
 
 <Intro>
 

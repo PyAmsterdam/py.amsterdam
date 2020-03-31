@@ -4,12 +4,18 @@
 :event_type: Meetup
 :rsvp_url: https://www.meetup.com/PyAmsterdam/events/269508542/
 :date: 2020-03-25 19:00
+:cover: images/03-25-online-Optiver.png
 
 Are you dealing with isolation due to COVID-19?
 Are you missing your friends from the Python community?
 PyAmsterdam is also moving online to help you!
 
 This is going to be our first online meetup and we have two amazing speakers!
+
+
+.. figure:: {static}/images/03-25-online-Optiver.png
+  :alt: Python Online meetup March 2020
+  :width: 80%
 
 Join the meetup using this `Zoom meeting link`_
 
