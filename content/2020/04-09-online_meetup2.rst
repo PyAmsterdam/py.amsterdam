@@ -20,13 +20,12 @@ Schedule
 .. table::
    :class: schedule-table
 
-
    ===== =
-   19:00 | Intro
-   19:15 | Newbie is not nobody - you can contribute to communities even if you are new -- Lais Carvalho
-   20:00 | Is it a bird? Is it a plane? Accelerating Python with numba -- Juan Luis Cano
-   21:00 | Lightning talks
-   21:30 | Closing (if no further interest)
+   19:00 Intro
+   19:15 Newbie is not nobody - you can contribute to communities even if you are new -- Lais Carvalho
+   20:00 Is it a bird? Is it a plane? Accelerating Python with numba -- Juan Luis Cano
+   21:00 Lightning talks
+   21:30 Closing (if no further interest)
    ===== =
 
 Newbie is not nobody - you can contribute to communities even if you are new 
