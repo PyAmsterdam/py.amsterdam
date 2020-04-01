@@ -6,6 +6,8 @@ meetup. This event will be kindly hosted by Picnic [2], make sure to
 check out their meetup group for other events. https://www.meetup.com
 /Meetinup-Picnic/
 
+   [image: pyamsterdam_picnic.png][image]
+
 We are currently looking for talks and speakers. Preferred topics are:
 testing, async, serverless, GUI, data visualisation. To submit a talk
 you can: Create PullRequest at: https://github.com/PyAmsterdam/py-

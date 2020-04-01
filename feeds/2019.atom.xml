@@ -175,19 +175,19 @@ Understanding agility made me realise that programming doesn't have to feel
 like mine sweeping and saved me from the shadow of burnout.
 Since then I feel an urge to share that revelation.&lt;/p&gt;
 &lt;/div&gt;
-</content><category term="2019"></category></entry><entry><title>range(4) - the fourth meetup at Picnic</title><link href="https://pyamsterdam.github.io/py.amsterdam/2019/09/26/range4-the-fourth-meetup-at-picnic.html" rel="alternate"></link><published>2019-09-26T18:00:00+02:00</published><updated>2019-09-26T18:00:00+02:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2019-09-26:/py.amsterdam/2019/09/26/range4-the-fourth-meetup-at-picnic.html</id><summary type="html">&lt;!-- .. figure:: {static}images/pyamsterdam_picnic.png
-:alt: pyamsterdam_picnic.png --&gt;
-&lt;!-- .. image:: /resources/images/pyamsterdam_picnic.png --&gt;
-&lt;p&gt;We are happy to announce the &lt;a class="reference external" href="https://www.meetup.com/PyAmsterdam/events/263449620/"&gt;fourth instance&lt;/a&gt; &lt;a class="footnote-reference" href="#id1" id="id2"&gt;[1]&lt;/a&gt; of the PyAmsterdam meetup.
+</content><category term="2019"></category></entry><entry><title>range(4) - the fourth meetup at Picnic</title><link href="https://pyamsterdam.github.io/py.amsterdam/2019/09/26/range4-the-fourth-meetup-at-picnic.html" rel="alternate"></link><published>2019-09-26T18:00:00+02:00</published><updated>2019-09-26T18:00:00+02:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2019-09-26:/py.amsterdam/2019/09/26/range4-the-fourth-meetup-at-picnic.html</id><summary type="html">&lt;p&gt;We are happy to announce the &lt;a class="reference external" href="https://www.meetup.com/PyAmsterdam/events/263449620/"&gt;fourth instance&lt;/a&gt; &lt;a class="footnote-reference" href="#id1" id="id2"&gt;[1]&lt;/a&gt; of the PyAmsterdam meetup.
 This event will be kindly hosted by &lt;a class="reference external" href="https://join.picnic.app"&gt;Picnic&lt;/a&gt; &lt;a class="footnote-reference" href="#id3" id="id4"&gt;[2]&lt;/a&gt;,
 make sure to check out their meetup group for other events. &lt;a class="reference external" href="https://www.meetup.com/Meetinup-Picnic/"&gt;https://www.meetup.com/Meetinup-Picnic/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="pyamsterdam_picnic.png" src="https://pyamsterdam.github.io/py.amsterdam/2019/09/26/pyamsterdam_picnic.png" style="width: 80%;" /&gt;
+&lt;/div&gt;
 &lt;p&gt;We are currently looking for talks and speakers.
-Preferred topics are: testing …&lt;/p&gt;</summary><content type="html">&lt;!-- .. figure:: {static}images/pyamsterdam_picnic.png
-:alt: pyamsterdam_picnic.png --&gt;
-&lt;!-- .. image:: /resources/images/pyamsterdam_picnic.png --&gt;
-&lt;p&gt;We are happy to announce the &lt;a class="reference external" href="https://www.meetup.com/PyAmsterdam/events/263449620/"&gt;fourth instance&lt;/a&gt; &lt;a class="footnote-reference" href="#id1" id="id2"&gt;[1]&lt;/a&gt; of the PyAmsterdam meetup.
+Preferred topics are: testing …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We are happy to announce the &lt;a class="reference external" href="https://www.meetup.com/PyAmsterdam/events/263449620/"&gt;fourth instance&lt;/a&gt; &lt;a class="footnote-reference" href="#id1" id="id2"&gt;[1]&lt;/a&gt; of the PyAmsterdam meetup.
 This event will be kindly hosted by &lt;a class="reference external" href="https://join.picnic.app"&gt;Picnic&lt;/a&gt; &lt;a class="footnote-reference" href="#id3" id="id4"&gt;[2]&lt;/a&gt;,
 make sure to check out their meetup group for other events. &lt;a class="reference external" href="https://www.meetup.com/Meetinup-Picnic/"&gt;https://www.meetup.com/Meetinup-Picnic/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="pyamsterdam_picnic.png" src="https://pyamsterdam.github.io/py.amsterdam/2019/09/26/pyamsterdam_picnic.png" style="width: 80%;" /&gt;
+&lt;/div&gt;
 &lt;p&gt;We are currently looking for talks and speakers.
 Preferred topics are: testing, async, serverless, GUI, data visualisation.
 To submit a talk you can:

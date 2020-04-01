@@ -1,4 +1,4 @@
-//.masthead {
+ //.masthead {
 //    min-height: 30rem;
 //    position: relative;
 //    display: table;
@@ -243,4 +243,9 @@ footer a:hover {
 
 }
 
-//div > p
+.figure {
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+}

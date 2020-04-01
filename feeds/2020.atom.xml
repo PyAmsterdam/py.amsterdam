@@ -1,14 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PyAmsterdam - 2020</title><link href="https://pyamsterdam.github.io/py.amsterdam/" rel="alternate"></link><link href="https://pyamsterdam.github.io/py.amsterdam/feeds/2020.atom.xml" rel="self"></link><id>https://pyamsterdam.github.io/py.amsterdam/</id><updated>2020-03-25T19:00:00+01:00</updated><entry><title>[VIRTUAL] Py.Amsterdam from home! #StayAtHome</title><link href="https://pyamsterdam.github.io/py.amsterdam/2020/03/25/virtual-pyamsterdam-from-home-stayathome.html" rel="alternate"></link><published>2020-03-25T19:00:00+01:00</published><updated>2020-03-25T19:00:00+01:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2020-03-25:/py.amsterdam/2020/03/25/virtual-pyamsterdam-from-home-stayathome.html</id><summary type="html">&lt;p&gt;Are you dealing with isolation due to COVID-19?
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PyAmsterdam - 2020</title><link href="https://pyamsterdam.github.io/py.amsterdam/" rel="alternate"></link><link href="https://pyamsterdam.github.io/py.amsterdam/feeds/2020.atom.xml" rel="self"></link><id>https://pyamsterdam.github.io/py.amsterdam/</id><updated>2020-04-09T19:00:00+02:00</updated><entry><title>[VIRTUAL] Py.Amsterdam from home! #StayAtHome</title><link href="https://pyamsterdam.github.io/py.amsterdam/2020/04/09/virtual-pyamsterdam-from-home-stayathome.html" rel="alternate"></link><published>2020-04-09T19:00:00+02:00</published><updated>2020-04-09T19:00:00+02:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2020-04-09:/py.amsterdam/2020/04/09/virtual-pyamsterdam-from-home-stayathome.html</id><summary type="html">&lt;p&gt;Are you dealing with isolation due to COVID-19?
+Are you missing your friends from the Python community?
+PyAmsterdam is also moving online to help you!&lt;/p&gt;
+&lt;p&gt;This is going to be our second online meetup and we have two amazing speakers!&lt;/p&gt;
+&lt;p&gt;Join the meetup using this &lt;a class="reference external" href="https://zoom.us/j/335080995"&gt;Zoom meeting link&lt;/a&gt; &lt;a class="footnote-reference" href="#id2" id="id3"&gt;[1]&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="schedule"&gt;
+&lt;h2&gt;Schedule …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Are you dealing with isolation due to COVID-19?
+Are you missing your friends from the Python community?
+PyAmsterdam is also moving online to help you!&lt;/p&gt;
+&lt;p&gt;This is going to be our second online meetup and we have two amazing speakers!&lt;/p&gt;
+&lt;p&gt;Join the meetup using this &lt;a class="reference external" href="https://zoom.us/j/335080995"&gt;Zoom meeting link&lt;/a&gt; &lt;a class="footnote-reference" href="#id2" id="id3"&gt;[1]&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="schedule"&gt;
+&lt;h2&gt;Schedule&lt;/h2&gt;
+&lt;table border="1" class="schedule-table docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="5%" /&gt;
+&lt;col width="95%" /&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt;19:00&lt;/td&gt;
+&lt;td&gt;&lt;div class="first last line-block"&gt;
+&lt;div class="line"&gt;Intro&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;19:15&lt;/td&gt;
+&lt;td&gt;&lt;div class="first last line-block"&gt;
+&lt;div class="line"&gt;Newbie is not nobody - you can contribute to communities even if you are new -- Lais Carvalho&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;20:00&lt;/td&gt;
+&lt;td&gt;&lt;div class="first last line-block"&gt;
+&lt;div class="line"&gt;Is it a bird? Is it a plane? Accelerating Python with numba -- Juan Luis Cano&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;21:00&lt;/td&gt;
+&lt;td&gt;&lt;div class="first last line-block"&gt;
+&lt;div class="line"&gt;Lightning talks&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;21:30&lt;/td&gt;
+&lt;td&gt;&lt;div class="first last line-block"&gt;
+&lt;div class="line"&gt;Closing (if no further interest)&lt;/div&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="section" id="newbie-is-not-nobody-you-can-contribute-to-communities-even-if-you-are-new"&gt;
+&lt;h2&gt;Newbie is not nobody - you can contribute to communities even if you are new&lt;/h2&gt;
+&lt;div class="section" id="lais-carvalho"&gt;
+&lt;h3&gt;Lais Carvalho&lt;/h3&gt;
+&lt;p&gt;With a solid background on customer service, Lais fell in love with Python after struggling
+for 2 years with Wolfran, trying to understand calculus. Her passion for technology and community provided
+a route to a significant presence on the Python sphere, especially regarding tech events.
+She is a member of Python Ireland, an organiser at Pyjamas and also volunteers for EuroPython 2019.
+You can find her at &lt;a class="reference external" href="http://laiscarvalho.com"&gt;laiscarvalho.com&lt;/a&gt; &lt;a class="footnote-reference" href="#id4" id="id5"&gt;[2]&lt;/a&gt; and &lt;a class="reference external" href="https://twitter.com/lais_bsc"&gt;&amp;#64;lais_bsc&lt;/a&gt; &lt;a class="footnote-reference" href="#id6" id="id7"&gt;[3]&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="abstract"&gt;
+&lt;h3&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Building identity from the start - beginners and how can they contribute to the community
+In the face of what is currently happening in the world, I talk about ways that newcomers
+can be part and contribute to the tech community, helping them to get over the social-distancing heavy toll.
+I also tell my personal experience as an events organiser for PyConIE, and give some insights of how
+is to be the only female member in a tech committee; stressing that newbies should be
+not only allowed - but rather broadly invited -, to the 'big-boys' table!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="is-it-a-bird-is-it-a-plane-accelerating-python-with-numba"&gt;
+&lt;h2&gt;Is it a bird? Is it a plane? Accelerating Python with numba&lt;/h2&gt;
+&lt;div class="section" id="juan-luis-cano-rodriguez"&gt;
+&lt;h3&gt;Juan Luis Cano Rodríguez&lt;/h3&gt;
+&lt;p&gt;Chair of the Spanish branch of the PSF, Aerospace engineer, open source software advocate,
+European citizen, urban cyclist, '70s hard rock lover, frustrated musician, human being.
+Obsessed with pursuing impossible dreams and democratizing the access to knowledge.
+More on his &lt;a class="reference external" href="https://www.linkedin.com/in/juanluiscanor/"&gt;linkedin&lt;/a&gt; &lt;a class="footnote-reference" href="#id8" id="id9"&gt;[4]&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h3&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;We are lucky there are very diverse solutions to make Python faster that have
+been in use for a while: from wrapping compiled languages (NumPy), to altering
+the Python syntax to make it more suitable to compilers (Cython), to using a
+subset of it which can in turn be accelerated (numba), and many many more.
+However, each of these options has a tradeoff, and there is no silver bullet.&lt;/p&gt;
+&lt;p&gt;Some years ago I chose numba for poliastro, my personal project, because of its
+simplicity, effectiveness, and not having to learn a hybrid dialect of Python.
+numba compiles numerical Python code on the fly using the LLVM machinery,
+producing extremely performant code... when it works!&lt;/p&gt;
+&lt;p&gt;On the other hand, even though it is quite mature as a library and most of the
+Python syntax and NumPy functions are supported, there are still some
+limitations that affect its usage. In particular, I strive to offer a high-
+level API with support for physical units (extensions of NumPy) and reusable
+functions which can be passed as arguments, which sometimes require using
+complex objects or introspective Python behavior which is not available.&lt;/p&gt;
+&lt;p&gt;In this talk we will introduce numba, describe its basic usage, and then
+discuss the strategies and workarounds we have developed to overcome its
+limitations, as well as some advanced numba features we can leverage. We will
+focus mostly on CPUs, and mention very briefly its GPU capabilities.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="section" id="links"&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;table class="docutils footnote" frame="void" id="id2" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id3"&gt;[1]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://zoom.us/j/335080995"&gt;https://zoom.us/j/335080995&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id4" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id5"&gt;[2]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="http://laiscarvalho.com"&gt;http://laiscarvalho.com&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id6" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id7"&gt;[3]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://twitter.com/lais_bsc"&gt;https://twitter.com/lais_bsc&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table class="docutils footnote" frame="void" id="id8" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id9"&gt;[4]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a class="reference external" href="https://www.linkedin.com/in/juanluiscanor/"&gt;https://www.linkedin.com/in/juanluiscanor/&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content><category term="2020"></category></entry><entry><title>[VIRTUAL] Py.Amsterdam from home! #StayAtHome</title><link href="https://pyamsterdam.github.io/py.amsterdam/2020/03/25/virtual-pyamsterdam-from-home-stayathome.html" rel="alternate"></link><published>2020-03-25T19:00:00+01:00</published><updated>2020-03-25T19:00:00+01:00</updated><author><name>PyAmsterdam</name></author><id>tag:pyamsterdam.github.io,2020-03-25:/py.amsterdam/2020/03/25/virtual-pyamsterdam-from-home-stayathome.html</id><summary type="html">&lt;p&gt;Are you dealing with isolation due to COVID-19?
 Are you missing your friends from the Python community?
 PyAmsterdam is also moving online to help you!&lt;/p&gt;
 &lt;p&gt;This is going to be our first online meetup and we have two amazing speakers!&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="Python Online meetup March 2020" src="https://pyamsterdam.github.io/py.amsterdam/images/03-25-online-Optiver.png" style="width: 80%;" /&gt;
+&lt;/div&gt;
 &lt;p&gt;Join the meetup using this &lt;a class="reference external" href="https://zoom.us/j/921378848"&gt;Zoom meeting link&lt;/a&gt; &lt;a class="footnote-reference" href="#id2" id="id3"&gt;[1]&lt;/a&gt;&lt;/p&gt;
 &lt;div class="section" id="about-optiver"&gt;
 &lt;h2&gt;About …&lt;/h2&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Are you dealing with isolation due to COVID-19?
 Are you missing your friends from the Python community?
 PyAmsterdam is also moving online to help you!&lt;/p&gt;
 &lt;p&gt;This is going to be our first online meetup and we have two amazing speakers!&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="Python Online meetup March 2020" src="https://pyamsterdam.github.io/py.amsterdam/images/03-25-online-Optiver.png" style="width: 80%;" /&gt;
+&lt;/div&gt;
 &lt;p&gt;Join the meetup using this &lt;a class="reference external" href="https://zoom.us/j/921378848"&gt;Zoom meeting link&lt;/a&gt; &lt;a class="footnote-reference" href="#id2" id="id3"&gt;[1]&lt;/a&gt;&lt;/p&gt;
 &lt;div class="section" id="about-optiver"&gt;
 &lt;h2&gt;About Optiver&lt;/h2&gt;
