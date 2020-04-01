@@ -1,5 +1,5 @@
-[VIRTUAL] Py.Amsterdam from home! #StayAtHome
-=============================================
+[VIRTUAL] Py.Amsterdam from home #2! #StayAtHome
+================================================
 
 :event_type: Meetup
 :rsvp_url: https://www.meetup.com/PyAmsterdam/events/269773330/
@@ -32,8 +32,8 @@ Schedule
 Newbie is not nobody - you can contribute to communities even if you are new 
 ----------------------------------------------------------------------------
 
-Lais Carvalho
-~~~~~~~~~~~~~
+
+About: Lais Carvalho
 
 With a solid background on customer service, Lais fell in love with Python after struggling 
 for 2 years with Wolfran, trying to understand calculus. Her passion for technology and community provided 
@@ -55,8 +55,7 @@ not only allowed - but rather broadly invited -, to the 'big-boys' table!
 Is it a bird? Is it a plane? Accelerating Python with numba
 -----------------------------------------------------------
 
-Juan Luis Cano Rodríguez
-~~~~~~~~~~~~~~~~~~~~~~~~
+About: Juan Luis Cano Rodríguez
 
 Chair of the Spanish branch of the PSF, Aerospace engineer, open source software advocate, 
 European citizen, urban cyclist, '70s hard rock lover, frustrated musician, human being. 
