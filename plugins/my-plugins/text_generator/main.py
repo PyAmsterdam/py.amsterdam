@@ -1,8 +1,9 @@
 from pelican import signals
 import pelican
 from .writers import TextWriter
-from pelican.readers import Readers, RstReader
-from docutils.writers.html5_polyglot import HTMLTranslator, Writer
+from pelican.readers import Readers, RstReader, PelicanHTMLWriter, PelicanHTMLTranslator
+# from pelican.writers import Writer
+# from docutils.writers.html5_polyglot import HTMLTranslator, Writer
 import docutils.core
 import docutils.nodes
 import json
@@ -12,50 +13,49 @@ text_articles = {}
 events = []
 
 
-class PelicanHTMLTranslator(HTMLTranslator):
+class MyTranslator(PelicanHTMLTranslator):
 
-    def visit_abbreviation(self, node):
-        attrs = {}
-        if node.hasattr('explanation'):
-            attrs['title'] = node['explanation']
-        self.body.append(self.starttag(node, 'abbr', '', **attrs))
-
-    def depart_abbreviation(self, node):
-        self.body.append('</abbr>')
-
-    def visit_image(self, node):
-        # set an empty alt if alt is not specified
-        # avoids that alt is taken from src
-        node['alt'] = node.get('alt', '')
-        return HTMLTranslator.visit_image(self, node)
+    def visit_table(self, node):
+        self.context.append(self.compact_p)
+        self.compact_p = True
+        atts = {}
+        classes = ['docutils', self.settings.table_style]
+        if 'align' in node:
+            classes.append('align-%s' % node['align'])
+        if 'width' in node:
+            atts['style'] = 'width: %s' % node['width']
+        self.body.append(
+            self.starttag(node, 'table', CLASS=' '.join(classes), **atts))
 
 
-class PelicanHTMLWriter(Writer):
+class MyWriter(PelicanHTMLWriter):
 
     def __init__(self):
-        Writer.__init__(self)
-        self.translator_class = PelicanHTMLTranslator
+        PelicanHTMLWriter.__init__(self)
+        self.translator_class = MyTranslator
 
 
-class _FieldBodyTranslator(HTMLTranslator):
-
-    def __init__(self, document):
-        HTMLTranslator.__init__(self, document)
-        self.compact_p = None
-
-    def astext(self):
-        return ''.join(self.body)
-
-    def visit_field_body(self, node):
-        pass
-
-    def depart_field_body(self, node):
-        pass
+#
+#
+# class _FieldBodyTranslator(HTMLTranslator):
+#
+#     def __init__(self, document):
+#         HTMLTranslator.__init__(self, document)
+#         self.compact_p = None
+#
+#     def astext(self):
+#         return ''.join(self.body)
+#
+#     def visit_field_body(self, node):
+#         pass
+#
+#     def depart_field_body(self, node):
+#         pass
 
 
 class ModifiedRstReader(RstReader):
 
-    # writer_class = PelicanHTMLWriter
+    writer_class = MyWriter
     # field_body_translator_class = _FieldBodyTranslator
 
     def read(self, source_path):
@@ -164,10 +164,15 @@ def write_events(*args, **kwargs):
     )
 
 
+def add_writer(pelican):
+    print(pelican)
+    # return MyWriter
+
+
 def register():
     # signals.readers_init.connect(add_reader)
     # signals.finalized.connect(create_calendar)
-    # signals.get_writer.connect(bubu)
+    signals.get_writer.connect(add_writer)
     signals.readers_init.connect(add_reader)
     # signals.content_object_init.connect(bubu)
     # signals.article_writer_finalized.connect(write_events)

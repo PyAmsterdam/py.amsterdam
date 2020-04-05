@@ -26,7 +26,7 @@ Schedule
 ------------------------
 
 .. table::
-   :class: schedule-table
+   :class: table
 
    ===== =
    18:00 Welcome
