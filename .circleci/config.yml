@@ -29,7 +29,7 @@ jobs:
             - ~/project/.venv
             - ~/project/node_modules
       - persist_to_workspace:
-          root: "~"
+          root: "~/"
           paths:
             - project/.venv
             - project/node_modules
@@ -39,9 +39,9 @@ jobs:
     executor: python-js
     steps:
       - attach_workspace:
-          at: "~"
-      - restore_cache:
-          key: deploy-{{ .Revision }}
+          at: "~/"
+#      - restore_cache:
+#          key: deploy-{{ .Revision }}
       - run:
           name: deploy
           command: |
