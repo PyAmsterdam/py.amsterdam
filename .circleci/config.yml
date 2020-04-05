@@ -18,13 +18,13 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: deps-{{ checksum "requirements.txt" }}-{{ checksum "package-lock.json" }}
+          key: deps-{{ checksum "requirements.txt" }}-{{ checksum "yarn.lock" }}
       - run: python -m venv .venv
       - run:
           name: Install dependencies
           command: pip install -r requirements.txt && yarn add now@latest
       - save_cache:
-          key: deps-{{ checksum "requirements.txt" }}-{{ checksum "package-lock.json" }}
+          key: deps-{{ checksum "requirements.txt" }}-{{ checksum "yarn.lock" }}
           paths:
             - ~/project/.venv
             - ~/project/node_modules
