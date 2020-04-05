@@ -45,6 +45,7 @@ jobs:
       - run:
           name: deploy
           command: |
+            pwd
             ls -la
             make prod
 
