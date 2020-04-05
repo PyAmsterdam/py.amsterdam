@@ -5,9 +5,51 @@ orbs:
   # Declare a dependency on the welcome-orb
   welcome: circleci/welcome-orb@0.4.1
 # Orchestrate or schedule a set of jobs
+
+executors:
+  python-js:
+    docker:
+      - image: circleci/python:3.7-node-browsers
+    working_directory: ~/project
+
+jobs:
+  install:
+    executor: python-js
+    steps:
+      - checkout
+      - restore_cache:
+          key: deps-{{ checksum "requirements.txt" }}-{{ checksum "package-lock.json" }}
+      - run: python -m venv .venv
+      - run:
+          name: Install dependencies
+          command: pip install -r requirements.txt && yarn add now@latest
+      - save_cache:
+          key: deps-{{ checksum "requirements.txt" }}-{{ checksum "package-lock.json" }}
+          paths:
+            - ~/project/.venv
+            - ~/project/node_modules
+      - persist_to_workspace:
+          root: "~"
+          paths:
+            - project/.venv
+            - project/node_modules
+            - project
+
+  deploy:
+    executor: python-js
+    steps:
+      - attach_workspace:
+          at: "~"
+      - restore_cache:
+          key: deploy-{{ .Revision }}
+      - run:
+          name: deploy
+          command: |
+            ls -la
+            make prod
+
 workflows:
-  # Name the workflow "welcome"
-  welcome:
-    # Run the welcome/run job in its own container
+  default:
     jobs:
-      - welcome/run
+      - install
+      - deploy
