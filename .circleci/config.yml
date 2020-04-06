@@ -47,7 +47,7 @@ jobs:
           command: |
             pwd
             ls -la
-            make prod
+            make preview
 
 workflows:
   default:
