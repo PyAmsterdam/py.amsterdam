@@ -19,10 +19,10 @@ This is going to be our first online meetup and we have two amazing speakers!
 
 Join the meetup using this `Zoom meeting link`_
 
-About COMPANY
--------------
+About Container Solutions
+--------------------------
 
-COMPANY_ hosted our first meetup in 2019 and
+`Container Solutions`_ <more text here>
 
 
 
@@ -34,7 +34,7 @@ Schedule
 
    ===== =
    19:00 Intro
-   19:15 <TALK1>
+   19:15 Introduction to FastAPI
    20:00 <TALK2>
    21:00 Lightning talks
    21:30 Closing (if no further interest)
@@ -42,12 +42,12 @@ Schedule
 
 
 
-Talk Title
------------------------------------------------------
+Introduction to FastAPI
+------------------------
 
-About `Speaker1`_:
+About `Sebastián Ramírez`_:
 
-
+Build a production-ready API in 30 min with FastAPI
 
 
 Abstract
@@ -67,8 +67,9 @@ Abstract
 Links
 -----
 
+.. _COMPANY: https://www.container-solutions.com
 .. _Zoom meeting link: <missing>
-.. _Speaker1: <url>
+.. _Sebastián Ramírez: https://github.com/tiangolo
 .. _Speaker2: <url>
 
 .. target-notes::
