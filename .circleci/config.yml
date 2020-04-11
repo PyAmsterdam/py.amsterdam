@@ -37,38 +37,40 @@ jobs:
 
   deploy:
     executor: python-js
-    branches:
-      only:
-        - master
     steps:
       - attach_workspace:
           at: "~/"
-#      - restore_cache:
-#          key: deploy-{{ .Revision }}
       - run:
-          name: deploy
+          name: deploy_job
           command: |
             make deploy
   preview:
     executor: python-js
-    branches:
-      only:
-        - feature/fixes
     steps:
       - attach_workspace:
           at: "~/"
       - run:
           name: preview
           command: |
-          make preview
+            make preview
 
 workflows:
-  default:
+  version: 2
+  deploy:
     jobs:
       - install
       - preview:
           requires:
             - install
+          filters:
+            branches:
+              only:
+                - feature/fixes
       - deploy:
           requires:
             - install
+          filters:
+            branches:
+              only:
+                - master
+
