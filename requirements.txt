@@ -1,5 +1,3 @@
 pelican==4.2.0
 minchin.pelican.plugins.nojekyll==1.0.2
-docutils
-ghp-import
-invoke
+ghp-import==0.5.5

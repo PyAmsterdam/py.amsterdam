@@ -41,6 +41,8 @@ SITEDESCRIPTION = 'PyAmsterdam is a community of Python users gathering for meet
 SITEPORT = os.environ.get("SITEPORT", "8000")
 SITEURL = os.environ.get("SITEURL", f"http://localhost:{SITEPORT}")
 
+TALK_FORM_URL = 'https://forms.gle/ocZGbV6F3BUvD4vx9'
+HOST_FORM_URL = 'https://forms.gle/Zc1Z15qQ4Rbs5e869'
 
 CDN = bool(os.environ.get('CDN', False))
 PATH = 'content'

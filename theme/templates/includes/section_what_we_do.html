@@ -1,4 +1,4 @@
-<!-- Services -->
+{% set block_style='col-lg-4 col-md-4 mb-5' %}
 <section class="content-section bg-danger text-white" id="services">
     <div class="container text-center">
         <div class="content-section-heading">
@@ -12,10 +12,11 @@
                 Our meetups are a safe space to practice your rhetorical
                 or teaching skills in exchange for your knowledge.
                 We are always on a lookout for talks and workshops.
+                Please <a class="scroll" href="#contact">contact us</a> to submit a talk or host the event.
             </p>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-4 mb-5 mb-lg-0">
+            <div class="{{ block_style }}">
                 <span class="service-icon rounded-circle mx-auto mb-3">
                     <i class="fas fa-users"></i>
                 </span>
@@ -26,7 +27,7 @@
                     where we gather, listen to interesting talks, have some drinks and meet others.
                 </p>
             </div>
-            <div class="col-lg-4 col-md-4 mb-5 mb-lg-0">
+            <div class="{{ block_style }}">
                 <span class="service-icon rounded-circle mx-auto mb-3">
                     <i class="fas fa-laptop-code"></i>
                 </span>
@@ -38,7 +39,7 @@
                     Attendees should bring their own laptop/device unless otherwise specified.
                 </p>
             </div>
-            <div class="col-lg-4 col-md-4 mb-5 mb-lg-0">
+            <div class="{{ block_style }}">
                 <span class="service-icon rounded-circle mx-auto mb-3">
                     <i class="fas fa-hands-helping"></i>
                 </span>
@@ -52,4 +53,9 @@
                 </p>
             </div>
         </div>
+        <div class="row justify-content-center">
+            <a class="btn btn-dark btn-lg mx-1" href="{{ TALK_FORM_URL }}">Submit a talk</a>
+            <a class="btn btn-light btn-lg mx-1" href="{{ HOST_FORM_URL }}">Host an event</a>
+        </div>
+    </div>
 </section>

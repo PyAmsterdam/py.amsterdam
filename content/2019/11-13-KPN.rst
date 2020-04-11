@@ -3,7 +3,7 @@ n = 5; f"{n}th meetup at KPN"
 
 :event_type: Meetup
 :rsvp_url: https://www.meetup.com/PyAmsterdam/events/265665270/
-:date: 2020-11-13 18:00
+:date: 2019-11-13 18:00
 
 .. .. image:: /resources/images/pyamsterdam_kpn.png
 
@@ -34,7 +34,7 @@ Schedule
 ------------------------
 
 .. table::
-   :class: schedule-table
+   :class: table
 
    ===== =
    18:00 Welcome with drinks and food

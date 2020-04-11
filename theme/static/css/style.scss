@@ -239,6 +239,12 @@ footer a:hover {
     border: transparent;
     width: 100%;
     margin-bottom: 1rem;
+    tbody {
+      border: transparent;
+      tr {
+        border: transparent;
+      }
+    }
   }
 
 }
