@@ -42,8 +42,7 @@ jobs:
           at: "~/"
       - run:
           name: deploy_job
-          command: |
-            make deploy
+          command: "make deploy"
   preview:
     executor: python-js
     steps:
@@ -51,8 +50,7 @@ jobs:
           at: "~/"
       - run:
           name: preview
-          command: |
-            make preview
+          command: "make preview"
 
 workflows:
   version: 2
