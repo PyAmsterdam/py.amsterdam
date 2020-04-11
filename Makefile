@@ -6,10 +6,12 @@ PELICANOPTS=
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
+NOW_CONFIG_FILE=$(BASEDIR)/now/now.json
 CONFFILE=$(BASEDIR)/pelicanconf.py
 CONF_PROD=$(BASEDIR)/conf_prod.py
 CONF_PREVIEW=$(BASEDIR)/conf_preview.py
 CONF_GH_PAGES=$(BASEDIR)/conf_gh_pages.py
+
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -68,14 +70,12 @@ clean-nas:  ## Clean files duplicated by Synology DS
 prod: .check-env-vars clean
 	@echo making prod
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_PROD) $(PELICANOPTS)
-	cp -r now/ $(OUTPUTDIR)
-	now --prod
+	yarn now $(OUTPUTDIR) --prod --token=$(NOW_TOKEN) --local-config=$(NOW_CONFIG_FILE)
 
 preview: .check-env-vars clean
 	@echo making preview
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_PREVIEW) $(PELICANOPTS)
-	cp -r now/ $(OUTPUTDIR)
-	cd $(OUTPUTDIR) && now
+	yarn now $(OUTPUTDIR) --token=$(NOW_TOKEN) --local-config=$(NOW_CONFIG_FILE)
 
 github: .check-env-vars clean
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_GH_PAGES) $(PELICANOPTS)

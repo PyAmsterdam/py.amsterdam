@@ -18,13 +18,15 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: deps-{{ checksum "requirements.txt" }}-{{ checksum "yarn.lock" }}
-      - run: python -m venv .venv & . .venv/bin/activate
+          key: deps-{{ checksum "requirements.txt" }}-{{ checksum "yarn.lock" }}-{{ .Environment.CACHE_VERSION }}
       - run:
           name: Install dependencies
-          command: pip install -r requirements.txt && yarn add now@latest
+          command: |
+            python -m venv .venv
+            . ./.venv/bin/activate
+            pip install -r requirements.txt && yarn add now@latest
       - save_cache:
-          key: deps-{{ checksum "requirements.txt" }}-{{ checksum "yarn.lock" }}
+          key: deps-{{ checksum "requirements.txt" }}-{{ checksum "yarn.lock" }}-{{ .Environment.CACHE_VERSION }}
           paths:
             - ~/project/.venv
             - ~/project/node_modules
@@ -43,6 +45,7 @@ jobs:
       - run:
           name: deploy_job
           command: |
+            . ./.venv/bin/activate
             make prod
   preview:
     executor: python-js
@@ -52,6 +55,7 @@ jobs:
       - run:
           name: preview
           command: |
+            . ./.venv/bin/activate
             make preview
 
 workflows:
