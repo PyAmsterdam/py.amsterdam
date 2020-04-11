@@ -19,7 +19,7 @@ jobs:
       - checkout
       - restore_cache:
           key: deps-{{ checksum "requirements.txt" }}-{{ checksum "yarn.lock" }}
-      - run: python -m venv .venv
+      - run: python -m venv .venv & . .venv/bin/activate
       - run:
           name: Install dependencies
           command: pip install -r requirements.txt && yarn add now@latest
