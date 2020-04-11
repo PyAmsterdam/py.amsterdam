@@ -37,6 +37,9 @@ jobs:
 
   deploy:
     executor: python-js
+    branches:
+      only:
+        - master
     steps:
       - attach_workspace:
           at: "~/"
@@ -45,14 +48,27 @@ jobs:
       - run:
           name: deploy
           command: |
-            pwd
-            ls -la
-            make preview
+            make deploy
+  preview:
+    executor: python-js
+    branches:
+      only:
+        - feature/fixes
+    steps:
+      - attach_workspace:
+          at: "~/"
+      - run:
+          name: preview
+          command: |
+          make preview
 
 workflows:
   default:
     jobs:
       - install
+      - preview:
+          requires:
+            - install
       - deploy:
           requires:
             - install
