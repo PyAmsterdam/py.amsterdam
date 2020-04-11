@@ -51,7 +51,7 @@ jobs:
           at: "~/"
       - run:
           name: preview
-          command:
+          command: |
             make preview
 
 workflows:
