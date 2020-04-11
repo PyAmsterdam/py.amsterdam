@@ -34,7 +34,7 @@ html: ## Build html for localhost
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean: clean-nas
-	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
+	@[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
@@ -63,17 +63,19 @@ endif
 .PHONY: html help clean regenerate serve serve-global devserver publish
 
 clean-nas:  ## Clean files duplicated by Synology DS
-	find . -type f -name "*_DiskStation_*" -exec rm {} \;
+	@find . -type f -name "*_DiskStation_*" -exec rm {} \;
 
 prod: .check-env-vars clean
 	@echo making prod
-#	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_PROD) $(PELICANOPTS)
-#	cp -r now/ $(OUTPUTDIR)
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_PROD) $(PELICANOPTS)
+	cp -r now/ $(OUTPUTDIR)
+	now --prod
 
 preview: .check-env-vars clean
 	@echo making preview
-#	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_PREVIEW) $(PELICANOPTS)
-#	cp -r now/ $(OUTPUTDIR)
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_PREVIEW) $(PELICANOPTS)
+	cp -r now/ $(OUTPUTDIR)
+	cd $(OUTPUTDIR) && now
 
 github: .check-env-vars clean
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_GH_PAGES) $(PELICANOPTS)

@@ -43,7 +43,7 @@ jobs:
       - run:
           name: deploy_job
           command: |
-            make deploy
+            make prod
   preview:
     executor: python-js
     steps:
