@@ -1,6 +1,9 @@
 PyAmsterdam
 ===========
 
+.. image:: https://circleci.com/gh/PyAmsterdam/py.amsterdam.svg?style=svg
+    :target: https://circleci.com/gh/PyAmsterdam/py.amsterdam
+
 This is a website of PyAmsterdam powered by pelican_.
 
 How to create events
