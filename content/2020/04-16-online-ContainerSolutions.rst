@@ -2,7 +2,7 @@
 ==============================================================
 
 :event_type: Meetup
-:rsvp_url: <meetup.com event url>
+:rsvp_url: https://www.meetup.com/Software-Circus/events/270038344/
 :date: 2020-04-16 19:00
 
 .. .. :cover: images/04-16-online-ContainerSolutions.png
@@ -24,9 +24,9 @@ Together we unleash the battle of API development 30 minutes vs 1 minute!
 Join the meetup using this `Zoom meeting link`_
 
 About Software Circus
---------------------------
+----------------------
 
-`Software Circus`_ <more text here>
+`Software Circus`_
 
 We are a motley crew of dreamers who are unhealthily obsessed with consuming information and
 changing ourselves and those around us. We love software,
@@ -43,7 +43,7 @@ Schedule
    ===== =
    19:00 Intro
    19:15 Introduction to FastAPI
-   20:00 <TALK2>
+   20:00 Evegenie - how to create REST API with Python in 1 minute
    21:00 Lightning talks
    21:30 Closing (if no further interest)
    ===== =
@@ -85,7 +85,7 @@ Links
 -----
 
 .. _Software Circus: https://www.meetup.com/Software-Circus/
-.. _Zoom meeting link: <missing>
+.. _Zoom meeting link: https://zoom.us/j/97900014669
 .. _Sebastián Ramírez: https://github.com/tiangolo
 .. _Dawid Ziolkowski: https://twitter.com/DavidZisky
 
