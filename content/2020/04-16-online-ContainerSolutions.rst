@@ -2,7 +2,7 @@
 ==============================================================
 
 :event_type: Meetup
-:rsvp_url: https://www.meetup.com/Software-Circus/events/270038344/
+:rsvp_url: https://www.meetup.com/PyAmsterdam/events/270038010/
 :date: 2020-04-16 19:00
 
 .. .. :cover: images/04-16-online-ContainerSolutions.png
