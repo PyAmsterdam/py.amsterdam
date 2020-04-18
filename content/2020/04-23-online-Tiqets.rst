@@ -15,13 +15,14 @@ PyAmsterdam is also moving online to help you!
 
 
 
-.. .. figure:: {static}/images/04-16-online-ContainerSolutions.png
+.. figure:: {static}/images/04-23-online-Tiqets.png
    :alt: Python Online meetup April 16 2020
    :width: 80%
 
 
 
-Join the meetup using this `Zoom meeting link`_
+Join the meetup using this `Zoom meeting link`_.
+Password to access the meeting is ``002426``
 
 Tiqets
 -------
@@ -49,7 +50,7 @@ Schedule
 
 
 
-Oscar Vilaplana, Sr. Backend Developer @ Tiqets
+Python type hinting and how we use it at Tiqets
 -----------------------------------------------
 
 About `Oscar Vilaplana`_:
@@ -70,22 +71,16 @@ Python type hinting and how we use it at Tiqets to have stable, self-documenting
 Memory address in python!
 --------------------------
 
-About `Mridu Bhatnagar`_:
-
-10 years of experience in IT, mainly as System Admin/DevOps/Cloud Native Engineer.
-I like to code as well. I contribute to Open Source whenever I can and I like to share my knowledge.
-When not coding - doing photography :)
+`Mridu Bhatnagar`_ is a software engineer.
+She loves paying it forward and giving back to the community.
+When not programming she is usually giving talks, taking workshops at various community meetups.
 
 Abstract
 ~~~~~~~~
 
-The intent of this talk is to understand the following mentioned things.
-What is ``id``?
-Why are list, dicts mutable? While strings, tuples immutable.Through examples.
-``a,b = 1, 1``? Whether this leads to a single memory reference ``id`` or 2
-different memory reference id.
-The difference between ``==`` and ``is``?
-Example showing ``*`` operator which copies the memory references.
+Let us understand what is happening to the memory address when you
+are working with built-in objects like (``int``, ``str``, ``bool``, ``lists``,
+``dictionaries``, ``set``).
 
 
 Minimal containers for your Python application
