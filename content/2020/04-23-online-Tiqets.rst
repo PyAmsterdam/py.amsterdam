@@ -41,7 +41,7 @@ Schedule
 
    ===== =
    19:00 Intro
-   19:15 Oscar Vilaplana, Sr. Backend Developer @ Tiqets
+   19:15 Python type hinting and how we use it at Tiqets
    19:35 Memory address in python!
    20:10 Minimal containers for your Python application
    20:30 Lightning talks
