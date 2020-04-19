@@ -20,9 +20,7 @@ PyAmsterdam is also moving online to help you!
    :width: 80%
 
 
-
-Join the meetup using this `Zoom meeting link`_.
-Password to access the meeting is ``002426``
+A link to join the Zoom meeting will be available for you after RSVP.
 
 Tiqets
 -------
@@ -103,7 +101,6 @@ Links
 -----
 
 .. _Tiqets: https://www.tiqets.com
-.. _Zoom meeting link: https://tiqets.zoom.us/j/98846623452
 .. _Oscar Vilaplana: https://www.linkedin.com/in/oscarvilaplana/
 .. _Mridu Bhatnagar: https://github.com/mridubhatnagar
 .. _Mircea Cosbuc: https://www.linkedin.com/in/mircea-cosbuc/
