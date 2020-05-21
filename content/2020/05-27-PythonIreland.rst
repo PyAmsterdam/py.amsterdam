@@ -4,6 +4,7 @@
 :event_type: Meetup
 :rsvp_url: https://www.meetup.com/PyAmsterdam/events/270782851/
 :date: 2020-05-27 19:30
+:cover: images/py_ireland.png
 
 Are you dealing with isolation due to COVID-19?
 Are you missing your friends from the Python community?
@@ -12,7 +13,7 @@ PyAmsterdam is also moving online to help you!
 This opportunity we are going to co-host with our friends from Python Ireland
 
 
-.. figure:: {static}/images/pyAmsterdam_380px.png
+.. figure:: {static}/images//py_ireland.png
    :alt: Python Online meetup May 27th 2020
    :width: 80%
 
