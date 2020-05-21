@@ -1,21 +1,18 @@
-[VIRTUAL] PyAmsterdam.union("Python Ireland") #StayAtHome
-=========================================================
+[VIRTUAL] PyAmsterdam.union('Python Ireland')
+=============================================
 
 :event_type: Meetup
 :rsvp_url: https://www.meetup.com/PyAmsterdam/events/270782851/
 :date: 2020-05-27 19:30
 
-.. :cover: images/pyAmsterdam_380px.png
-
-
 Are you dealing with isolation due to COVID-19?
 Are you missing your friends from the Python community?
 PyAmsterdam is also moving online to help you!
 
-This oportunity we are going to co-host with our friends from Python Ireland
+This opportunity we are going to co-host with our friends from Python Ireland
 
 
-.. figure:: {static}/images/pyAmsterdam_380px
+.. figure:: {static}/images/pyAmsterdam_380px.png
    :alt: Python Online meetup May 27th 2020
    :width: 80%
 
@@ -45,11 +42,12 @@ or our group please check out our website at http://python.ie/ (http://python.ie
 
 Schedule
 --------
+   
+.. warning:: Schedule is in CEST (UTC+02:00)
 
-   .. table::
+.. table::
    :class: schedule-table
 
-   Warning schedule is in CEST (UTC+02:00)
    ===== =
    19:30 Opening / General Python news
    20:00 WORKSHOP: Chatbot from Command Line
@@ -59,8 +57,8 @@ Schedule
    ===== =
 
 
-THE WORKSHOP:
-=============
+The workshop:
+-------------
 
 In this workshop, you will get to build your first chatbot 
 from the command line using Rasa open source and Python.
@@ -85,8 +83,8 @@ then you may appreciate these two installation guides for Rasa:
 - windows: https://www.youtube.com/watch?v=4ewIABo0OkU
 - ubuntu: https://www.youtube.com/watch?v=tXiYJM2vGJk
 
-THE WORKSHOPPER
-===============
+The workshopper
+---------------
 
 Vincent D. Warmerdam is a Research Advocate at Rasa where he helps the research team 
 explain and explore modern NLP algorithms for digital assistants. You may have seen 
