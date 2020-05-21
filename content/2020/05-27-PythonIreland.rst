@@ -13,9 +13,8 @@ PyAmsterdam is also moving online to help you!
 This opportunity we are going to co-host with our friends from Python Ireland
 
 
-.. figure:: {static}/images//py_ireland.png
+.. figure:: {static}/images/py_ireland.png
    :alt: Python Online meetup May 27th 2020
-   :width: 80%
 
 
 A link to join the Zoom meeting will be available for you after RSVP.
