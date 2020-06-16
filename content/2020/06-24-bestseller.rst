@@ -5,6 +5,8 @@
 :rsvp_url: https://www.meetup.com/PyAmsterdam/events/271334241/
 :date: 2020-06-24 19:00
 
+`Join our community slack!`_
+
 There will be a space for Lightning talks at the end of the event do not hesitate and sign up at when you join!
 
 Are you dealing with isolation due to COVID-19?
@@ -78,6 +80,8 @@ My previous presentations can be found here_
 Links
 -----
 
+
+.. _`Join our community slack!`: https://bit.ly/join-pyamsterdam-slack
 .. _BESTSELLER: https://about.bestseller.com/jobs/design-your-future/e-commerce
 .. _website: BESTSELLER_
 .. _@santiwilly: https://twitter.com/santiwilly
