@@ -7,6 +7,8 @@
 
 .. .. :cover: images/04-16-online-ContainerSolutions.png
 
+.. important:: **ZOOM link update https://zoom.us/j/91008811607**
+
 Are you dealing with isolation due to COVID-19?
 Are you missing your friends from the Python community?
 PyAmsterdam is also moving online to help you!
@@ -85,7 +87,7 @@ Links
 -----
 
 .. _Software Circus: https://www.meetup.com/Software-Circus/
-.. _Zoom meeting link: https://zoom.us/j/97900014669
+.. _Zoom meeting link: https://zoom.us/j/91008811607
 .. _Sebastián Ramírez: https://github.com/tiangolo
 .. _Dawid Ziolkowski: https://twitter.com/DavidZisky
 
