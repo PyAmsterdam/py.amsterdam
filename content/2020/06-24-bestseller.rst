@@ -41,12 +41,12 @@ Schedule
    :class: schedule-table
 
    ===== =
-   19:00 Opening
-   19:10 Modular Threaded Design pattern in Python microservices
-   19:40 Automating python packages release cycle with commitizen
-   20:10 Live raffle with prizes
-   20:20 Lightnig Talks
-   20:30 Closing (if no further interest)
+   18:00 Opening
+   18:10 Modular Threaded Design pattern in Python microservices
+   18:40 Automating python packages release cycle with commitizen
+   19:10 Live raffle with prizes
+   19:20 Lightnig Talks
+   19:30 Closing (if no further interest)
    ===== =
 
 
