@@ -7,6 +7,9 @@
 
 `Join our community slack!`_
 
+Special live raffle with a chance to win some prizes!
+Which one of them is the latest Raspberry Pi 4 model B!
+
 There will be a space for Lightning talks at the end of the event do not hesitate and sign up at when you join!
 
 Are you dealing with isolation due to COVID-19?
@@ -15,7 +18,7 @@ PyAmsterdam is also moving online to help you!
 
 A link to join the Zoom meeting will be available for you after RSVP.
 
-BestSeller
+Bestseller
 ---------------
 At BESTSELLER_, we are more than 17,000 people in 38 different countries working for over 20 fashion brands such as 
 VERO MODA, JACK & JONES, J.LINDEBERG and ONLY. 
@@ -24,6 +27,7 @@ empowering us to think outside the box and pursue the ideas we believe in to tak
 
 What drives us is our ambition to constantly optimize the online shopping experience of our customers. 
 We work agile, cross-functionally and are proud of our collaborative and international culture.
+We do so from our E-Commerce HQ in the heart of Amsterdam together with our colleagues from more than 40 different nationalities.
 
 All about us - https://about.bestseller.com/jobs/design-your-future/e-commerce
 For more info checkout our website_.
@@ -40,7 +44,8 @@ Schedule
    19:00 Opening
    19:10 Modular Threaded Design pattern in Python microservices
    19:40 Automating python packages release cycle with commitizen
-   20:10 Lightnig Talks
+   20:10 Live raffle with prizes
+   20:20 Lightnig Talks
    20:30 Closing (if no further interest)
    ===== =
 
