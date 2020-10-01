@@ -1,6 +1,6 @@
 PyAmsterdam
 ===========
-
+This website basically helps people to create an events using article metadata.
 .. image:: https://circleci.com/gh/PyAmsterdam/py.amsterdam.svg?style=svg
     :target: https://circleci.com/gh/PyAmsterdam/py.amsterdam
 
