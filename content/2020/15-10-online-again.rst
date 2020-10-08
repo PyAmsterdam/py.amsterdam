@@ -20,8 +20,8 @@ Schedule
 
    ===== =
    19:00 Intro
-   19:15 TBA -- Artem Zhukov
-   19:35 TBA -- Andrea Maldonado
+   19:15 Using asyncio for building cli applications -- Artem Zhukov
+   19:35 Applied Machine Learning: Leak detection in water pipelines -- Andrea Maldonado
    19:55 Lightning talks
    21:30 Closing (if no further interest)
    ===== =
@@ -49,21 +49,35 @@ In this talk, we'll take a look on very different angle of
 using the asyncio - building a CLI utilities.
 
 
-Andrea Maldonado
+Applied Machine Learning: Leak detection in water pipelines
 -----------------------------------------------------------
 
-
+Hello, my name is Andrea.
+I am a devoted organizer of Pyladies Munich and PhD student at the Chair of Databases
+and Data Mining at LMU Munich. In my offline free time, you can find me doing yoga,
+experimenting in the kitchen or riding my bicycle while singing out loud some Queen.👩‍🎤🎤
+My Github_ and Twitter_
 
 Abstract
 ~~~~~~~~
 
 
-
+This project is part of a university's practical course.
+Anomaly Detection and Localization in big industrial facilities is one important application
+field of Artificial Intelligence nowadays.
+As part of Munich's University program and in cooperation with
+Stadtwerken München I got to participate in a one week hackathon-like project,
+where based on auditory data we built and evaluated different
+Machine Learning models to detect and localize leaks in water systems
+all over the city. If you are interested in Machine Learning topics and
+would like to know how a real life field use-case looks like,
+please feel welcome to join this talk.
 
 Links
 -----
 
 .. _website: https://zhukovgreen.pro
-
+.. _Github: https://github.com/andreamalhera
+.. _Twitter: https://twitter.com/andreamalhera
 
 .. target-notes::
