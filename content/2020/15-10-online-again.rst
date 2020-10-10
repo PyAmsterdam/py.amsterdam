@@ -9,9 +9,6 @@ Are you dealing with isolation due to COVID-19?
 Are you missing your friends from the Python community?
 PyAmsterdam is also moving online to help you!
 
-This is going to be our second online meetup and we have two amazing speakers!
-
-
 Schedule
 ------------------------
 
