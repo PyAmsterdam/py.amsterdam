@@ -1,0 +1,54 @@
+[ONLINE] Talks - ETL/ELT pipelines in action
+=======================================================================
+
+:event_type: Meetup
+:rsvp_url: https://www.meetup.com/PyAmsterdam/events/275018905/
+:date: 2020-10-15 19:00
+
+This time together with `PyLadies Amsterdam`_ and it's all about ETL/ELT in action.
+Talks Level: Intermediate-Advanced
+
+**Important!!!** How to join:
+On the morning of the event, you will get a link via Meetup. Make sure that you have opted for emails from Meetup.
+
+Schedule
+------------------------
+
+.. table::
+   :class: table
+
+   ===== =
+   18:30 Intro
+   18:40 Data Processing with Python: a Containerized, Scheduled, and Monitored Pipeline on the Google Cloud Platform - Nancy Irisarri Méndez
+   19:15
+   19:50 Lightning talks
+   20:00 Free chat
+   ===== =
+
+Data Processing with Python: a Containerized, Scheduled, and Monitored Pipeline on the Google Cloud Platform
+-------------------------------------------------------------------------------------------------------------
+
+About: `Nancy Irisarri Méndez`_
+I studied economics and astronomy and have worked within research groups, government organizations, and health care. My strong suit is data science and data engineering, using Python and cloud providers as favorite tools.
+
+Abstract
+~~~~~~~~
+During the talk, you will learn how to containerize a Python pipeline for data processing and execute it as a scheduled job that sends email messages for critical errors.
+
+TBA
+-----------------------------------------------------------
+
+TBA
+
+Abstract
+~~~~~~~~
+TBA
+
+Links
+-----
+
+.. _PyLadies Amsterdam: https://amsterdam.pyladies.com
+.. _Nancy Irisarri Méndez: https://www.linkedin.com/in/nancyirisarrimendez
+
+
+.. target-notes::
