@@ -10,6 +10,7 @@ jobs:
         run: |
           pwd
           ls -la
+          python3 -m pip install -r requirements.txt
           make prod
       - uses: amondnet/vercel-action@v20
         with:
