@@ -62,6 +62,9 @@ else
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 endif
 
+livereload:
+	invoke livereload
+
 .PHONY: html help clean regenerate serve serve-global devserver publish
 
 clean-nas:  ## Clean files duplicated by Synology DS
