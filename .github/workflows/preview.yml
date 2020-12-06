@@ -1,6 +1,6 @@
 name: website-preview
-#on: [pull_request]
-on: push
+on: [pull_request]
+#on: push
 jobs:
   preview:
     runs-on: ubuntu-latest
