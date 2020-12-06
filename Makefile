@@ -70,15 +70,15 @@ livereload:
 clean-nas:  ## Clean files duplicated by Synology DS
 	@find . -type f -name "*_DiskStation_*" -exec rm {} \;
 
-prod: .check-env-vars clean
+prod: clean
 	@echo making prod
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_PROD) $(PELICANOPTS)
-	yarn now $(OUTPUTDIR) --prod --token=$(NOW_TOKEN) --local-config=$(NOW_CONFIG_FILE)
+	#yarn now $(OUTPUTDIR) --prod --token=$(NOW_TOKEN) --local-config=$(NOW_CONFIG_FILE)
 
 preview: .check-env-vars clean
 	@echo making preview
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_PREVIEW) $(PELICANOPTS)
-	yarn now $(OUTPUTDIR) --token=$(NOW_TOKEN) --local-config=$(NOW_CONFIG_FILE)
+	# yarn now $(OUTPUTDIR) --token=$(NOW_TOKEN) --local-config=$(NOW_CONFIG_FILE)
 
 github: .check-env-vars clean
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_GH_PAGES) $(PELICANOPTS)
