@@ -17,12 +17,14 @@ jobs:
           pip3 install setuptools
           pip3 install wheel
           pip3 install -r requirements.txt
-          make prod
+          make preview
       - uses: amondnet/vercel-action@v20
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
-#          vercel-args: '--prod' #Optional
+          vercel-args: '--prod' #Optional
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required
           working-directory: ./output
+          alias-domains: | #Optional
+            pr-{{PR_NUMBER}}.dev.py.amsterdam

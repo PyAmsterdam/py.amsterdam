@@ -23,10 +23,8 @@ ifeq ($(RELATIVE), 1)
 	PELICANOPTS += --relative-urls
 endif
 
-.check-env-vars:
-	@test $${NOW_TOKEN?Please set environment variable NOW_TOKEN}
-	@test $${NOW_ORG_ID?Please set environment variable NOW_ORG_ID}
-	@test $${NOW_PROJECT_ID?Please set environment variable NOW_PROJECT_ID}
+.check-env-vars-preview:
+	@test $${PR_NUMBER?Please set environment variable PR_NUMBER}
 
 .PHONY: help
 help:	## This help.
@@ -73,13 +71,7 @@ clean-nas:  ## Clean files duplicated by Synology DS
 prod: clean
 	@echo making prod
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_PROD) $(PELICANOPTS)
-	#yarn now $(OUTPUTDIR) --prod --token=$(NOW_TOKEN) --local-config=$(NOW_CONFIG_FILE)
 
-preview: .check-env-vars clean
+preview: .check-env-vars-preview clean
 	@echo making preview
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_PREVIEW) $(PELICANOPTS)
-	# yarn now $(OUTPUTDIR) --token=$(NOW_TOKEN) --local-config=$(NOW_CONFIG_FILE)
-
-github: .check-env-vars clean
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONF_GH_PAGES) $(PELICANOPTS)
-	ghp-import -b gh-pages -m "In dev preview" $(OUTPUTDIR) -p
