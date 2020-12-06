@@ -1,101 +1,41 @@
 {% extends "base.html" %}
 {#{% block title %}{{ SITENAME }} - Archives{% endblock %}#}
 {% set len_categories = categories|length %}
+{% set next_section = '#events' %}
+{% block nav_items %}
+    <li class="nav-item">
+        <a class="nav-link" href="{{ SITEURL }}">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link scroll" href="#events">Past Events<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ SITEURL }}/#latest-event">Latest Event</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link scroll" href="#contact">Contact</a>
+    </li>
+{% endblock nav_items %}
 
 {% block content %}
-{#    <h1>All meetups for {{ SITENAME }}</h1>#}
-{##}
-{#    tolik: {{ len_categories }}#}
-{#    {% for category, arts in categories|reverse %}#}
-{#        <dt>{{ category }} | {{ arts }}</dt>#}
-{#        {% for art in arts %}#}
-{#            <dt>{{ art.title }} | {{ art.date }}</dt>#}
-{#        {% endfor %}#}
-{##}
-        {#    <dt>{{ category }}</dt>#}
-        {#    <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>#}
-{#    {% endfor %}#}
-
     {% set block_style='d-flex flex-column col-lg-6 col-md-6 mb-6' %}
     <section class="content-section bg-white" id="events">
         <div class="container text-center">
-            {#        <div class="content-section-heading">#}
-            {#            <h3 class="text-dark mb-0">Services</h3>#}
-            {#            <h2>What We Do</h2>#}
-            {#            <p class="mb-0">#}
-            {#                The best way to learn is to teach others.#}
-            {#                Do you have anything interesting to share? <a class="scroll" href="#contact">Let us know!</a>#}
-            {#            </p>#}
-            {#            <p class="mb-5">#}
-            {#                Our meetups are a safe space to practice your rhetorical#}
-            {#                or teaching skills in exchange for your knowledge.#}
-            {#                We are always on a lookout for talks and workshops.#}
-            {#                Please <a class="scroll" href="#contact">contact us</a> to submit a talk or host the event.#}
-            {#            </p>#}
-            {#        </div>#}
+
             <div class="col-lg-10 mx-auto content-section-heading text-center">
                 <h3 class="text-danger mb-0">Event archive</h3>
                 <h2>PyAmsterdam events</h2>
-{#                <h3>{{ article.date.strftime(article.settings.DATE_FORMATS.a) }}</h3>#}
             </div>
             <div class="row">
                 {% for category, arts in categories|reverse %}
                     <div class="{{ block_style }}">
                         <h2>{{ category }}</h2>
                         {% for art in arts %}
-{#                            <ul>#}
-{#                                <li>#}
-                                    <p>{{ art.date.strftime(art.date_format) }} <a href="{{ art.url }}">{{ art.title }}</a></p>
-{#                                </li>#}
-{#                            </ul>#}
+                            <p>{{ art.date.strftime(art.date_format) }} <a href="{{ art.url }}">{{ art.title }}</a></p>
                         {% endfor %}
                     </div>
-{#                    <dt>{{ category }} | {{ arts }}</dt>#}
-
-{#                    <dt>{{ art.title }} | {{ art.date }}</dt>#}
-
                 {% endfor %}
-
-                {#                <span class="service-icon rounded-circle mx-auto mb-3">#}
-                {#                    <i class="fas fa-users"></i>#}
-                {#                </span>#}
-                {#                <h4>#}
-                {#                    <strong>Meetups</strong>#}
-                {#                </h4>#}
-                {#                <p class="text-faded mb-0">Is an ~3 hour event usually hold during the working week#}
-                {#                    where we gather, listen to interesting talks, have some drinks and meet others.#}
-                {#                </p>#}
-
-                {#            <div class="{{ block_style }}">#}
-                {#                <span class="service-icon rounded-circle mx-auto mb-3">#}
-                {#                    <i class="fas fa-laptop-code"></i>#}
-                {#                </span>#}
-                {#                <h4>#}
-                {#                    <strong>Workshops</strong>#}
-                {#                </h4>#}
-                {#                <p class="text-faded mb-0">Is focused on hands-on experience and practice.#}
-                {#                    Can take 3 and more hours, dependent on the content.#}
-                {#                    Attendees should bring their own laptop/device unless otherwise specified.#}
-                {#                </p>#}
-                {#            </div>#}
-                {#            <div class="{{ block_style }}">#}
-                {#                <span class="service-icon rounded-circle mx-auto mb-3">#}
-                {#                    <i class="fas fa-hands-helping"></i>#}
-                {#                </span>#}
-                {#                <h4>#}
-                {#                    <strong>Help</strong>#}
-                {#                </h4>#}
-                {#                <p class="text-faded mb-0">#}
-                {#                    Would you like to organise an event but not sure how?#}
-                {#                    We are here to help you out.#}
-                {#                    Our team is looking for you, volunteers, to make this community better.#}
-                {#                </p>#}
-                {#            </div>#}
-                {#        </div>#}
-                {#        <div class="row justify-content-center">#}
-                {#            <a class="btn btn-dark btn-lg mx-1" href="{{ TALK_FORM_URL }}">Submit a talk</a>#}
-                {#            <a class="btn btn-light btn-lg mx-1" href="{{ HOST_FORM_URL }}">Host an event</a>#}
-                {#        </div>#}
             </div>
+        </div>
     </section>
 {% endblock %}
