@@ -5,16 +5,17 @@ jobs:
   preview:
     runs-on: ubuntu-latest
     steps:
-#      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: "list"
         run: |
           pwd
           ls -la
-#      - uses: amondnet/vercel-action@v20
-#        with:
-#          github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
-#          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
-##          vercel-args: '--prod' #Optional
-#          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
-#          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required
-#          working-directory: ./output
+          make prod
+      - uses: amondnet/vercel-action@v20
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+#          vercel-args: '--prod' #Optional
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required
+          working-directory: ./output
