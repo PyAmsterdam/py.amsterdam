@@ -6,11 +6,25 @@ import os
 from itertools import chain
 from pathlib import Path
 from urllib.parse import quote_plus
-
+from pelican.contents import Article
+from typing import List
+import datetime
 
 def raise_helper(msg):
     """Raise exception in jinja as a filter."""
     raise Exception(msg)
+
+
+def by_year(dates: List[Article]):
+    print(dates)
+    ret = {}
+    for art in dates:
+        year = art.date.year
+        data = ret.get(year, [])
+        data.append(art)
+        ret[year] = data
+    print(ret)
+    return ret
 
 
 def cachebust(url, file):
@@ -29,9 +43,13 @@ JINJA_FILTERS = {
     'quoteplus': quote_plus,
     'count_to_font_size': lambda c: '{p:.1f}%'.format(p=100 + 25 * math.log(c, 2)),
     'chain': lambda ch: list(chain(*ch)),
-    'cachebust': cachebust
+    'cachebust': cachebust,
+    'by_year': by_year
 
 }
+
+YEAR_CURRENT = datetime.datetime.now().year
+SUMMARY_USE_FIRST_PARAGRAPH = True
 
 CUR_DIR = Path(__file__).parent.absolute()
 AUTHOR = 'PyAmsterdam'
@@ -78,7 +96,8 @@ DELETE_OUTPUT_DIRECTORY = False
 PLUGINS = [
     'minchin.pelican.plugins.nojekyll',
     # 'sitemap',
-    'text_generator'
+    'text_generator',
+    'summary'
 ]
 PLUGIN_PATHS = [
     str(CUR_DIR.joinpath("plugins", "pelican-plugins")),
@@ -106,6 +125,7 @@ DIRECT_TEMPLATES = [
     # "categories",
     # "archives",
     # "search",
+    'events'
 ]
 
 DOCUTILS_SETTINGS = {
@@ -125,3 +145,9 @@ DOCUTILS_SETTINGS = {
     # 'dump_pseudo_xml': True,
 
 }
+NEWEST_FIRST_ARCHIVES = True
+
+# YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
+# MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/index.html'
+# ARCHIVES_SAVE_AS = 'archives.html'
+# CATEGORIES_SAVE_AS = 'categories.html'

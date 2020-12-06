@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block meta %}
+    <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
+    {% include "includes/site_og.html" %}
+
+    <title>PyAmsterdam: python community website</title>
+    <meta name="keywords" content="PyAmsterdam, Python, Community, Meetup, Event, Workshop"/>
+    <meta name="robots" content="{{ ROBOTS }}"/>
+
+{% endblock meta %}
+{% set next_section = '#coc' %}
+{% block nav_items %}
+    <li class="nav-item">
+        <a class="nav-link" href="{{ SITEURL }}">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link scroll" href="#coc">Code of Conduct<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link scroll" href="#contact">Contact</a>
+    </li>
+{% endblock nav_items %}
+
+{% block content %}
+    <section class="content-section bg-white" id="coc">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto content-section-heading text-center">
+                    <h2>{{ page.title }}</h2>
+                </div>
+                <div class="col-lg-10 mx-auto">
+                    <div class="lead mb-5 article-content">
+                        {{ page.content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
