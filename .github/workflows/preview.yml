@@ -11,9 +11,11 @@ jobs:
           python-version: '3.6' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
       - name: "list"
+        env:
+          PR_NUMBER: ${{ github.event.number }}
         run: |
-          pwd
-          ls -la
+          echo "Comment on PR# ${{ github.event.pull_request.number }}"
+          echo "$PR_NUMBER"
           pip3 install setuptools
           pip3 install wheel
           pip3 install -r requirements.txt
