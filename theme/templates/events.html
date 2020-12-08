@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{#{% block title %}{{ SITENAME }} - Archives{% endblock %}#}
+{% set len_categories = categories|length %}
+{% set next_section = '#events' %}
+{% block nav_items %}
+    <li class="nav-item">
+        <a class="nav-link" href="{{ SITEURL }}">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link scroll" href="#events">Past Events<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ SITEURL }}/#latest-event">Latest Event</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link scroll" href="#contact">Contact</a>
+    </li>
+{% endblock nav_items %}
+
+{% block content %}
+    {% set block_style='d-flex flex-column col-lg-6 col-md-6 mb-6' %}
+    <section class="content-section bg-white" id="events">
+        <div class="container text-center">
+
+            <div class="col-lg-10 mx-auto content-section-heading text-center">
+                <h3 class="text-danger mb-0">Event archive</h3>
+                <h2>PyAmsterdam events</h2>
+            </div>
+            <div class="row">
+                {% for category, arts in categories|reverse %}
+                    <div class="{{ block_style }}">
+                        <h2>{{ category }}</h2>
+                        {% for art in arts %}
+                            <p>{{ art.date.strftime(art.date_format) }} <a href="{{ art.url }}">{{ art.title }}</a></p>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

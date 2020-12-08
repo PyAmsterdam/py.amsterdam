@@ -1,0 +1,31 @@
+# Deploys a website preview from a PR at https://pr-{{PR_NUMBER}}.dev.py.amsterdam
+name: website-preview
+on: [pull_request]
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.6' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+      - name: "pelican"
+        env:
+          PR_NUMBER: ${{ github.event.number }}
+        run: |
+          echo "Workgin on PR# ${{ github.event.pull_request.number }}"
+          pip3 install -U pip
+          pip3 install setuptools
+          pip3 install wheel
+          pip3 install -r requirements.txt
+          make preview
+      - uses: amondnet/vercel-action@v20
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required
+          working-directory: ./output
+          alias-domains: | #Optional
+            pr-{{PR_NUMBER}}.dev.py.amsterdam

@@ -1,0 +1,24 @@
+<!-- Latest event -->
+{% set article=dates[0] %}
+<section class="content-section bg-white" id="latest-event">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-10 mx-auto content-section-heading">
+                <h3 class="text-danger mb-0">Meetups & Workshops</h3>
+                <h2>Latest Event</h2>
+                <h5>{{ article.date.strftime(article.settings.DATE_FORMATS.a) }}</h5>
+                <p>
+                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                </p>
+                <p class="lead">
+                    {{ article.summary }}
+                </p>
+                <div class="row justify-content-center">
+                    <a class="btn btn-info btn-lg mx-1" href="{{ SITEURL }}/{{ article.url }}#event">Event Details</a>
+                    <a class="btn btn-danger btn-lg mx-1" href="{{ article.rsvp_url }}">RSVP</a>
+                    <a class="btn btn-dark btn-lg mx-1" href="{{ SITEURL }}/events.html#events">Past Events [{{ dates|length-1 }}]</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
