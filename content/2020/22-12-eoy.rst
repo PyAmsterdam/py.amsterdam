@@ -1,4 +1,4 @@
-[ONLINE] aggregate(PyLadies,PyAmsterdam, ETL, EOY2020)
+[ONLINE] aggregate(PyLadies, PyAmsterdam, ETL).byebye(2020)
 =======================================================================
 
 :event_type: Meetup
