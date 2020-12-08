@@ -1,0 +1,62 @@
+[ONLINE] aggregate(PyLadies, PyAmsterdam, ETL).byebye(2020)
+=======================================================================
+
+:event_type: Meetup
+:rsvp_url: https://www.meetup.com/PyAmsterdam/events/275018905/
+:date: 2020-12-22 18:30
+
+This time together with `PyLadies Amsterdam`_ and it's all about ETL/ELT in action.
+Talks Level: Intermediate-Advanced
+
+**Important!!!** How to join:
+On the morning of the event, you will get a link via Meetup. Make sure that you have opted for emails from Meetup.
+
+Schedule
+------------------------
+
+.. table::
+   :class: table
+
+   ===== =
+   18:30 Intro
+   18:40 Data Processing with Python: a Containerized, Scheduled, and Monitored Pipeline on the Google Cloud Platform - Nancy Irisarri Méndez
+   19:15 AWS Glue - the good, the bad, the ugly - Jan Gazda
+   19:50 Lightning talks
+   20:00 Free chat
+   ===== =
+
+Data Processing with Python: a Containerized, Scheduled, and Monitored Pipeline on the Google Cloud Platform
+-------------------------------------------------------------------------------------------------------------
+
+About: `Nancy Irisarri Méndez`_
+I studied economics and astronomy and have worked within research groups, government organizations, and health care. My strong suit is data science and data engineering, using Python and cloud providers as favorite tools.
+
+Abstract
+~~~~~~~~
+During the talk, you will learn how to containerize a Python pipeline for data processing and execute it as a scheduled job that sends email messages for critical errors.
+
+AWS Glue - the good, the bad, the ugly
+-----------------------------------------------------------
+
+About `Jan Gazda`_:
+
+Jan is a co-founder of PyAmsterdam, Pythonista and open-source contributor.
+Coming from Czech Republic he decided to bring the Python community spirit to Amsterdam.
+Python is his swiss army knife but he is not afraid of Golang as well. (But who needs types, right?)
+
+Abstract
+~~~~~~~~
+AWS Glue offers Serverless ETL pipeline and workflows, while it can be rather simple
+to start using it via console it quickly become non trivial for deployment via CI/CD pipeline.
+Management of multiple environments, working with the pipeline state and keeping your code DRY
+is a challenge. During the talk I will walk you through guts of AWS Glue and show my approach
+to more streamlined deployment.
+
+Links
+-----
+
+.. _PyLadies Amsterdam: https://amsterdam.pyladies.com
+.. _Nancy Irisarri Méndez: https://www.linkedin.com/in/nancyirisarrimendez
+.. _Jan Gazda: https://github.com/1oglop1/
+
+.. target-notes::
