@@ -3,7 +3,7 @@
 
 :event_type: Meetup
 :rsvp_url: https://www.meetup.com/PyAmsterdam/events/275018905/
-:date: 2020-10-15 19:00
+:date: 2020-12-22 18:30
 
 This time together with `PyLadies Amsterdam`_ and it's all about ETL/ELT in action.
 Talks Level: Intermediate-Advanced
