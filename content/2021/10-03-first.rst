@@ -48,7 +48,8 @@ and how we can expect it to evolvein the future.
 Contemporary Documentation
 -------------------------------------------------------------------------------------------------------------
 
-About: `Juha-Matti Santala`_
+About: `Juha-Matti Santala`_:
+
 Juhis is a developer community builder, web developer and programming teacher from Helsinki, Finland.
 When he's on a computer, he works on all parts of the stack from the backend to the frontend.
 When he's not on a computer, he's passionate about making tech a welcoming industry for everyone.
