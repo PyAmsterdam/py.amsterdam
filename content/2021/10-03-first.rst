@@ -56,7 +56,7 @@ When he's not on a computer, he's passionate about making tech a welcoming indus
 
 Abstract
 ~~~~~~~~
-"Teams change often. People leave and people join. In addition to those changes, we tend to forget what we were thinking.
+Teams change often. People leave and people join. In addition to those changes, we tend to forget what we were thinking.
 That's why it's a good practice to document those thoughts,
 discussions and decisions into a format that doesn't lose them.
 In this talk I explore ways to use tools and
