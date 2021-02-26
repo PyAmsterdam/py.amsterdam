@@ -49,7 +49,9 @@ Contemporary Documentation
 -------------------------------------------------------------------------------------------------------------
 
 About: `Juha-Matti Santala`_
-I studied economics and astronomy and have worked within research groups, government organizations, and health care. My strong suit is data science and data engineering, using Python and cloud providers as favorite tools.
+Juhis is a developer community builder, web developer and programming teacher from Helsinki, Finland.
+When he's on a computer, he works on all parts of the stack from the backend to the frontend.
+When he's not on a computer, he's passionate about making tech a welcoming industry for everyone.
 
 Abstract
 ~~~~~~~~
