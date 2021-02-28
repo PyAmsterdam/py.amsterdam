@@ -3,7 +3,7 @@
 
 :event_type: Meetup
 :rsvp_url: https://www.meetup.com/PyAmsterdam/events/276603012/
-:date: 2020-12-22 19:00
+:date: 2020-10-03 19:00
 
 Exciting times for Python 3.10, join us and learn how pattern matching will help Python.
 
