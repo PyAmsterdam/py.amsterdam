@@ -1,0 +1,103 @@
+PyAmsterdam meetup @ KPN offices
+=================================
+
+:event_type: Meetup
+:rsvp_url: https://www.meetup.com/PyAmsterdam/events/284440473/
+:date: 2022-04-06 18:30
+:cover: images/path_to_image.img
+
+
+Hello everyone!
+This is our 2nd meetup of the year and we want to thanks KPN for hosting us one more time!
+
+Schedule
+------------------------
+
+.. table::
+   :class: table
+
+   ===== =
+   18:00 Doors open! let's share some food and drinks thanks to our host.
+   19:00 First talk: "Interesting takeaways from book 'Test Driven Development With Python'" -- Rok Klancar
+   19:30 Second talk: "Graph-based stream processing in Python" -- Katarina Šupe
+   20:15 Lightning talks?
+   20:30 Networking
+   21:00 Closing time
+   ===== =
+
+
+Interesting takeaways from book 'Test Driven Development With Python'
+---------------------------------------------------------------------
+
+About Rok Klancar
+
+Started programming via the web developer path.
+Now use mainly Python for programming with Django web framework.
+Coming from Slovenia, I enjoy interesting meetup events and talks =)
+
+Abstract
+~~~~~~~~
+
+Test Driven Development was introduced to Rok via the official Django tutorial.
+
+It seemed like a must-have skill, to be a competent and competitive programmer
+in the industry. Python developers are in luck, because someone had written a book on TDD with Python. As a beginner, he picked it up, and went from cover to cover.
+
+Then, he did it again. You may ask yourself:
+
+"Can I give this book to someone else to make their development practices better?"
+
+"What can I learn from it?"
+
+"Should I invest time into this?"
+
+Well, the awesome thing is, that the book is available for free at https://www.obeythetestinggoat.com/
+
+But who is the Testing Goat and why would you want to obey it? 🐐
+
+Come and listen, where Rok will turn this mega 500 pager into a bite-sized talk.
+
+
+Graph-based stream processing in Python
+---------------------------------------
+
+About Katarina Šupe
+
+Developer Relations Engineer, Memgraph
+Katarina Šupe is a Developer Relations Engineer at Memgraph.
+Her journey there started with a summer internship, and her mathematics and computer science background was a perfect match to work in Memgraph.
+She enjoys contributing to different areas and exploring new real-time data visualization technologies.
+She sees the graph world as a future of data analytics due to the variety of algorithms used for stream processing.
+
+Twitter: https://twitter.com/supe_katarina
+Linkedin: https://www.linkedin.com/in/katarina-supe/
+Medium: https://medium.com/@supe.katarina
+
+Abstract
+~~~~~~~~
+
+The understanding of complex relationships and interdependencies between different data points is crucial to many decision-making processes.
+
+Graph analytics have found their way into every major industry, from marketing and financial services to transportation.
+Fraud detection, recommendation engines, and process optimization are some of the use cases where real-time decisions are mission-critical,
+and the underlying domain can be easily modeled as a graph.
+
+By ingesting data with Apache Kafka and applying graph-based stream processing in real-time, you can perform near-instantaneous graph analytics on vast amounts of data.
+When it comes to complex networks, it’s often necessary to perform graph algorithms such as calculating the PageRank, identifying communities, traversing relationships, etc.
+
+While solutions such as ksqlDB or Apache Spark are useful for processing relational data, Memgraph is an open-source streaming platform that can be used to analyze graph-based data models.
+Graph analytics can provide insights into complex networks that would otherwise require resource-intensive computations.
+It is also much simpler to store streaming data in the form of graphs, as the graph model doesn't rely on predefined and rigid tables.
+When connecting a Kafka data stream to Memgraph, you only need to create a transformation module that will map incoming messages to the property graph model.
+This data can then be traversed and analyzed using the Cypher query language without having to implement custom algorithms or relying on development-heavy solutions.
+MAGE (Memgraph Advanced Graph Extensions) is a graph library that works well with Kafka-powered systems and contains graph algorithms meant for analyzing streaming data.
+Besides stream processing, you can also utilize standard graph algorithms from the MAGE library to explore the stored data.
+We are going to showcase the Twitter Network Analysis demo, a web application with a Python Flask backend that uses Memgraph to ingest real-time data scraped from Twitter.
+You will learn how to use an Object Graph Mapper (OGM) in Python to connect to a graph database and perform stream processing on data streamed with Apache Kafka.
+
+
+Links
+-----
+
+.. _host: https://www.meetup.com/PyAmsterdam/events/284440473/
+.. target-notes::
