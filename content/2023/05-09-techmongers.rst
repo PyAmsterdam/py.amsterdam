@@ -1,5 +1,5 @@
-<event name>
-============
+Jupyter Notebooks in production
+===============================
 
 :event_type: Meetup
 :rsvp_url: https://www.meetup.com/pyamsterdam/events/292784580/
