@@ -15,7 +15,7 @@
 I will replace this with actual text later.
 
 About Techmongers
--------------
+-----------------
 
 The #1 code school in The Netherlands. Now they teach all skills for a sustainable workforce.
 Is very kind to have us here at < host_ >
