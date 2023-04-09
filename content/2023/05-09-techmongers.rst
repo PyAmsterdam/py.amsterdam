@@ -6,7 +6,11 @@ Jupyter Notebooks in production
 :date: 2023-05-09 18:00
 :cover: images/path_to_image.img
 
-I will replace this with actual text later.
+Jupyter Notebooks are a valuable tool for exploring data, but deploying them to production can be difficult.
+While there are products like Databricks that offer Jupyter-like interfaces and workflows,
+they can be expensive for small teams or specific use cases.
+In this meetup, we will explore two DIY solutions for managing
+Jupyter Notebooks that are affordable and suitable for small teams.
 
 About Techmongers
 -----------------
