@@ -6,19 +6,13 @@
 :date: 2023-05-09 18:00
 :cover: images/path_to_image.img
 
-.. cover image is for SEO meta tags, to add actual image to the article use .. figure::
-
-.. figure:: {static}/images/img.png
-  :alt: Python Online meetup March 2020
-  :width: 80%
-
 I will replace this with actual text later.
 
 About Techmongers
 -----------------
 
 The #1 code school in The Netherlands. Now they teach all skills for a sustainable workforce.
-Is very kind to have us here at < host_ >
+Is very kind to have us here at Techmongers_
 
 Schedule
 ------------------------
@@ -68,7 +62,7 @@ This talk is really good, trust me!
 Links
 -----
 
-.. _host: https://www.techmongers.nl
+.. _Techmongers: https://www.techmongers.nl
 .. _Jan Gazda: https://www.linkedin.com/in/jangazda
 .. _Benjamin Cerigo: https://www.linkedin.com/in/benjamin-cerigo/
 
