@@ -2,7 +2,7 @@
 ============
 
 :event_type: Meetup
-:rsvp_url: https://externalLink.com
+:rsvp_url: https://www.meetup.com/pyamsterdam/events/292784580/
 :date: 2023-05-09 18:00
 :cover: images/path_to_image.img
 
