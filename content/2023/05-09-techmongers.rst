@@ -27,7 +27,7 @@ Schedule
    ===== =
    18:00 Welcome
    18:30 First talk: Jupyter notebooks in production
-   19:00 Second talk: <TBA>
+   19:00 Second talk: Building a minimal data science platform
    19:30 Small break
    19:40 Lightning talks?
    20:10 Networking
@@ -53,15 +53,23 @@ show a live demo.
 Talk also mentions a few common pitfalls between different disciplines, software engineering / data engineering.
 
 
-<Talk>
--------------------------------------
+Building a minimal data science platform
+----------------------------------------
 
-About `Benjamin Cerigo`_:
+About `Benjamin Cerigo`_: Founding Technical Architect & Engineer of datavaluepoeple:
+a group of data professionals that build bespoke data-driven systems.
+He is the past head of tech at a fin-tech startup. Delivered full-stack projects end-to-end solo.
+Led teams of developers. Music composition at Falmouth, with awards.
+Created experimental music installations incorporating robotics.
+Believes inclusions can make a positive difference to the world.
 
 Abstract
 ~~~~~~~~
 
-This talk is really good, trust me!
+Data science teams often have to support numerous diverse projects and requests from the rest of their organisation.
+Establishing a general platform to power these many projects is vital to team effectiveness.
+This talk will look at the motivations and possible solutions for building a minimal data science platform and
+give tips and ideas for how you might increase the effectiveness of your next data science project.
 
 Links
 -----
