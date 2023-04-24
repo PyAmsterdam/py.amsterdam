@@ -5,11 +5,8 @@
         <div class="row">
             <div class="col-lg-10 mx-auto content-section-heading">
                 <h3 class="text-danger mb-0">Meetups & Workshops</h3>
-                <h2>Latest Event</h2>
+                <h2>{{ article.title }}</h2>
                 <h5>{{ article.date.strftime(article.settings.DATE_FORMATS.a) }}</h5>
-                <p>
-                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-                </p>
                 <p class="lead">
                     {{ article.summary }}
                 </p>
