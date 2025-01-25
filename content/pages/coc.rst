@@ -170,12 +170,11 @@ This Code of Conduct applies to the following online spaces:
 
 -  PyAmsterdam meetup https://www.meetup.com/PyAmsterdam/
 -  PyAmsterdam website https://py.amsterdam
--  PyAmsterdam Slack chat https://pyamsterdam.slack.com/
 -  PyAmsterdam github https://github.com/PyAmsterdam
--  PyAmsterdam Youtube channel
--  PyAmsterdam twitter account https://twitter.com/
+-  PyAmsterdam Youtube channel https://www.youtube.com/@py.amsterdam430
+-  PyAmsterdam twitter account https://twitter.com/pyamsterdam
+-  PyAmsterdam Mastodon account https://fosstodon.org/@pyamsterdam
 -  Any other online space managed by the PyAmsterdam community
--
 
 This Code of Conduct applies to the following people in official
 PyAmsterdam online spaces:
@@ -206,7 +205,7 @@ suggested resolution for a report, the PyAmsterdam Code of Conduct work
 group may choose to notify the PyAmsterdam board.
 
 Contact Information
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 
 If you believe that someone is violating the code of conduct, or have
 any other concerns, please contact a member of the PyAmsterdam Code of
