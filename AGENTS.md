@@ -7,7 +7,7 @@
 - `docs/` holds authoring aids such as `event_template.rst`; `output/` is generated HTML and should be rebuilt rather than edited.
 
 ## Build, Test, and Development Commands
-- `python3 -m venv .venv && source .venv/bin/activate` creates a virtualenv; activate before installing dependencies.
+- `source .venv/bin/activate` reuses the shared project virtualenv; run `python3 -m venv .venv` first if you need to recreate it locally.
 - `pip install -r requirements.txt` installs Pelican, plugins, and deployment helpers.
 - `make html` builds the site into `output/`; `make serve` hosts it at `http://localhost:8000` for manual review.
 - `invoke livereload` watches content, theme, and config files and rebuilds as you edit.
