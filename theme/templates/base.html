@@ -144,6 +144,21 @@
 {% with file='/vendor/jquery-easing/1.4.1/jquery.easing.min.js' %}
     <script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
 {% endwith %}
+<script id="zammad_form_script" src="https://pyamsterdam.zammad.com/assets/form/form.js"></script>
+<script>
+    jQuery(function ($) {
+        var $contactButton = $('#zammad-feedback-form');
+        if ($contactButton.length && typeof $.fn.ZammadForm === 'function') {
+            $contactButton.ZammadForm({
+                messageTitle: 'Contact Python Amsterdam',
+                messageSubmit: 'Submit',
+                messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.',
+                showTitle: true,
+                modal: true
+            });
+        }
+    });
+</script>
 </body>
 
 </html>
