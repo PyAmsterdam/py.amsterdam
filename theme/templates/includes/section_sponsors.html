@@ -1,41 +1,31 @@
-{% from 'macros/sponsors.j2' import add_sponsors with context %}
-<!-- Sponsors -->
-<section class="content-section bg-white" id="sponsors">
+<section class="content-section bg-white" id="supporters">
     <div class="container">
         <div class="content-section-heading text-center">
-            <h3 class="text-danger mb-0">Our</h3>
-            <h2 >Community Contributors</h2>
-            <p class="mb-5">Would you like to see your name or name of your company?
-                <a class="scroll" href="#contact">Contact us!</a>
-            </p>
+            <h3 class="text-danger mb-0">Thanks to our</h3>
+            <h2>Supporters &amp; Sponsors</h2>
+            <p class="mb-5">These partners keep PyAmsterdam running for the community.</p>
         </div>
-
-        <div class="row pt-5">
-        {{ add_sponsors(
-                {
-                    '<a href="https://www.gandi.net">Gandi</a>': 'Our beautiful domain registrar!',
-                    '<a href="https://www.optiver.com">Optiver</a>': 'provided a meeting space',
-                    '<a href="https://www.crunchrapps.com">Crunchr</a>': 'provided a meeting space',
-                    '<a href="https://www.hubs.com/">Hubs</a>': 'provided a meeting space',
-                    '<a href="https://picnic.app">Picnic</a>': 'provided a meeting space',
-                    '<a href="https://www.overons.kpn/en/kpn-in-the-netherlands/innovation">KPN</a>': 'provided a meeting space',
-                    '<a href="https://www.brookz.nl">Brookz</a>': 'provided a meeting space',
-                    'Sander van de Graaf': 'Talk: Detecting Outages at Scale',
-                    'Dinis Louseiro': 'Data Warehouse Automation in Python',
-                    'Daniel Bradburn': 'Battle testing your web API using OpenAPI and hypothesis',
-                    'Aybars Badour': 'Practical patterns in distributed systems for mere mortals (aka. patterns for microservices)',
-                    'Marc Wagner': 'Using micropython in IOT devices',
-                    'Jan van der Vegt': 'Industrialization of Machine Learning models is a complex task.',
-                    'Cornelis van Lit': 'Python in digital humanities research',
-                    'Santiago Fraire Willemoes': 'Exploring pytest capabilties',
-                    'Łukasz Langa': 'AsyncIO + Music',
-                    'Eric Holscher': 'About Read The docs and The Python Software Foundation',
-                    'Olga Sentemova': 'Getting started with FPGA with Python',
-                    'Mikaeil Orfanian': 'Architecture for Everyday Programming',
-                    'Joost Lek': 'Python 2 vs. Python 3: How to Navigate the Change',
-                }
-            )
-        }}
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="supporter-card border rounded p-4 h-100 text-center">
+                    <img src="{{ SITEURL }}/images/gandi_black.png" alt="Gandi.net logo" class="img-fluid mb-3" style="max-height: 120px;">
+                    <h3 class="h5"><a href="https://www.gandi.net" target="_blank" rel="noopener noreferrer">Gandi.net</a></h3>
+                    <p class="text-muted mb-0 small">Provides our py.amsterdam domain and DNS at no cost.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="supporter-card border rounded p-4 h-100 text-center">
+                    <img src="{{ SITEURL }}/images/psf-logo.png" alt="Python Software Foundation logo" class="img-fluid mb-3" style="max-height: 120px;">
+                    <h3 class="h5"><a href="https://www.python.org/psf/" target="_blank" rel="noopener noreferrer">Python Software Foundation</a></h3>
+                    <p class="text-muted mb-0 small">Sponsors our Meetup.com account so we can organise community events.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="supporter-card border rounded p-4 h-100 text-center">
+                    <h3 class="h5"><a href="https://zammad.org" target="_blank" rel="noopener noreferrer">Zammad</a></h3>
+                    <p class="text-muted mb-0 small">Donates ticketing software that helps us support attendees and volunteers.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
