@@ -144,6 +144,54 @@
 {% with file='/vendor/jquery-easing/1.4.1/jquery.easing.min.js' %}
     <script src="{{ (SITEURL~'/'~THEME_STATIC_DIR~file)|cachebust(THEME~'/static'~file) }}"></script>
 {% endwith %}
+<script id="zammad_form_script" src="https://pyamsterdam.zammad.com/assets/form/form.js"></script>
+<script>
+    jQuery(function ($) {
+        if (typeof $.fn.ZammadForm !== 'function') {
+            return;
+        }
+
+        function attachZammadForm(selector, overrides) {
+            var $elements = $(selector);
+            if (!$elements.length) {
+                return;
+            }
+
+            $elements.each(function () {
+                var $el = $(this);
+
+                if ($el.data('zammad-initialised')) {
+                    return;
+                }
+
+                $el.ZammadForm($.extend({
+                    modal: true,
+                    showTitle: true,
+                    messageSubmit: 'Submit'
+                }, overrides));
+
+                $el.data('zammad-initialised', true);
+            });
+        }
+
+        attachZammadForm('#zammad-feedback-form', {
+            messageTitle: 'Contact Python Amsterdam',
+            messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.'
+        });
+
+        attachZammadForm('.zammad-talk-form', {
+            messageTitle: 'Submit a Talk Proposal',
+            messageSubmit: 'Send proposal',
+            messageThankYou: 'Thanks for your talk proposal (#%s)! We\'ll review it and get back to you shortly.'
+        });
+
+        attachZammadForm('.zammad-host-form', {
+            messageTitle: 'Host a PyAmsterdam Event',
+            messageSubmit: 'Offer to host',
+            messageThankYou: 'Thanks for offering your venue (#%s)! We\'ll reach out with next steps soon.'
+        });
+    });
+</script>
 </body>
 
 </html>
