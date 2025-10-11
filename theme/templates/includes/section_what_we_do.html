@@ -56,6 +56,12 @@
         <div class="row justify-content-center">
             <button class="btn btn-dark btn-lg mx-1 zammad-talk-form" type="button">Submit a talk</button>
             <button class="btn btn-light btn-lg mx-1 zammad-host-form" type="button">Host an event</button>
+            {% if TELEGRAM_URL %}
+            <a class="btn btn-info btn-lg mx-1" href="{{ TELEGRAM_URL }}" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-telegram-plane mr-1"></i>
+                Join our Telegram
+            </a>
+            {% endif %}
         </div>
     </div>
 </section>

@@ -25,6 +25,12 @@
                         <i class="fab fa-youtube align-middle footer-icon"></i>
                         Py.Amsterdam
                     </a></p>
+                    {% if TELEGRAM_URL %}
+                    <p><a href="{{ TELEGRAM_URL }}">
+                        <i class="fab fa-telegram-plane align-middle footer-icon"></i>
+                        Telegram
+                    </a></p>
+                    {% endif %}
                 </div>
                 <div class="col-12 col-md-4">
                     <h3 class="mb-4">More information</h3>

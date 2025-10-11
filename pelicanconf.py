@@ -61,6 +61,7 @@ SITEURL = os.environ.get("SITEURL", f"http://localhost:{SITEPORT}")
 
 TALK_FORM_URL = 'https://forms.gle/ocZGbV6F3BUvD4vx9'
 HOST_FORM_URL = 'https://forms.gle/Zc1Z15qQ4Rbs5e869'
+TELEGRAM_URL = os.environ.get('TELEGRAM_URL', 'https://t.me/pyamsterdam')
 
 CDN = bool(os.environ.get('CDN', False))
 PATH = 'content'
