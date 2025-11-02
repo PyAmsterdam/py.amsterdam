@@ -1,0 +1,11 @@
+[project]
+name = "py-amsterdam"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "~=3.8.0"
+dependencies = [
+    "beautifulsoup4==4.9.3",
+    "minchin-pelican-plugins-nojekyll==1.0.2",
+    "pelican==4.8.0",
+]
