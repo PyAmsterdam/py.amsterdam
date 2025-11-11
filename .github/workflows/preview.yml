@@ -41,7 +41,7 @@ jobs:
       # upload the generated site as a build artifact for review.
       - name: Upload preview artifact
         if: ${{ github.event.pull_request.head.repo.fork == true || secrets.VERCEL_TOKEN == '' || secrets.VERCEL_ORG_ID == '' || secrets.VERCEL_PROJECT_ID == '' }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: site-preview
           path: output
