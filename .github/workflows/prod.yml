@@ -25,6 +25,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
           vercel-args: "--prod"
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+          zeit-token: ${{ secrets.VERCEL_TOKEN }} # Backward-compat for older inputs
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required
           working-directory: ./output

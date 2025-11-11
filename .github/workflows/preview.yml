@@ -20,12 +20,28 @@ jobs:
           pip3 install wheel
           pip3 install -r requirements.txt
           make preview
-      - uses: amondnet/vercel-action@v20
+      # Deploy only when PR originates from this repo (not a fork)
+      # and when Vercel secrets are available.
+      - name: Deploy preview to Vercel
+        if: ${{ github.event.pull_request.head.repo.fork == false && secrets.VERCEL_TOKEN != '' && secrets.VERCEL_ORG_ID != '' && secrets.VERCEL_PROJECT_ID != '' }}
+        uses: amondnet/vercel-action@v20
+        env:
+          PR_NUMBER: ${{ github.event.number }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+          zeit-token: ${{ secrets.VERCEL_TOKEN }} # Backward-compat for older inputs
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required
           working-directory: ./output
-          alias-domains: | #Optional
+          alias-domains: |
             pr-{{PR_NUMBER}}.dev.py.amsterdam
+
+      # If we cannot deploy (fork PR or secrets absent),
+      # upload the generated site as a build artifact for review.
+      - name: Upload preview artifact
+        if: ${{ github.event.pull_request.head.repo.fork == true || secrets.VERCEL_TOKEN == '' || secrets.VERCEL_ORG_ID == '' || secrets.VERCEL_PROJECT_ID == '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview
+          path: output
