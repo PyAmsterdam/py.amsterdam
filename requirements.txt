@@ -1,4 +1,4 @@
-pelican==4.8.0
+pelican==4.11.0.post0
 minchin.pelican.plugins.nojekyll==1.0.2
 ghp-import==0.5.5
 beautifulsoup4==4.9.3
