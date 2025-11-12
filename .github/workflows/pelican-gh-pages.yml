@@ -1,0 +1,52 @@
+name: Pelican CI & Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: # allows manual triggering of the workflow
+
+jobs:
+  pelican-build:
+    name: Build and test Pelican
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.8'
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Build the site
+        run: |
+          source .venv/bin/activate
+          make html
+      - name: Upload generated site
+        uses: actions/upload-artifact@v5
+        with:
+          name: site
+          path: output
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: pelican-build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Download built site
+        uses: actions/download-artifact@v5
+        with:
+          name: site
+          path: output
+      - name: Publish to GH Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: output
