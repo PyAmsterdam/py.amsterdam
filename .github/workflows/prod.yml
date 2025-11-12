@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch: # allows manual triggering of the workflow
+
 jobs:
   prod:
     runs-on: ubuntu-latest

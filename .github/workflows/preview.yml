@@ -1,6 +1,13 @@
 # Deploys a website preview from a PR at https://pr-{{PR_NUMBER}}.dev.py.amsterdam
 name: website-preview
-on: [pull_request]
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+  workflow_dispatch: # allows manual triggering of the workflow
+
 jobs:
   preview:
     runs-on: ubuntu-latest
