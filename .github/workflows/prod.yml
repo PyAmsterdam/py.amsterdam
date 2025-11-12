@@ -23,12 +23,20 @@ jobs:
           pip3 install wheel
           pip3 install -r requirements.txt
           make prod
-      - uses: amondnet/vercel-action@v25
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
-          vercel-args: "--prod"
-          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
-          zeit-token: ${{ secrets.VERCEL_TOKEN }} # Backward-compat for older inputs
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required
-          working-directory: ./output
+      - name: Install Vercel CLI
+        run: npm install --global vercel@33
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          set -euo pipefail
+          DEPLOY_LOG=$(mktemp)
+          vercel deploy ./output --prod --yes --token "$VERCEL_TOKEN" | tee "$DEPLOY_LOG"
+          DEPLOY_URL=$(grep -Eo 'https://[a-zA-Z0-9.-]+\.vercel\.app' "$DEPLOY_LOG" | tail -n1)
+          if [ -z "$DEPLOY_URL" ]; then
+            echo "Unable to extract deployment URL from Vercel output"
+            exit 1
+          fi
+          echo "Production deployment: $DEPLOY_URL"

@@ -1,0 +1,47 @@
+# Publishes PR previews to https://pyamsterdam.github.io/py.amsterdam/pr-<PR_NUMBER>/
+name: gh-pages-preview
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      suffix:
+        description: 'Custom subdirectory under pyamsterdam.github.io/py.amsterdam'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  gh-pages-preview:
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.fork == false
+    runs-on: ubuntu-latest
+    env:
+      SITEURL_SUFFIX: ${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.number) || github.event.inputs.suffix }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.8'
+      - name: Install build dependencies
+        run: |
+          pip3 install -U pip setuptools wheel
+          pip3 install -r requirements.txt
+      - name: Build site for GitHub Pages
+        env:
+          SITEURL_SUFFIX: ${{ env.SITEURL_SUFFIX }}
+        run: |
+          make clean
+          pelican content -o output -s conf_gh_pages.py
+          echo "Preview URL: https://pyamsterdam.github.io/py.amsterdam/${SITEURL_SUFFIX}/"
+      - name: Deploy preview to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: output
+          publish_branch: gh-pages
+          destination_dir: ${{ env.SITEURL_SUFFIX }}
+          keep_files: true
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
