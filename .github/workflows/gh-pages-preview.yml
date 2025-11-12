@@ -2,7 +2,7 @@
 name: gh-pages-preview
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize, reopened]
   workflow_dispatch:
     inputs:
@@ -15,12 +15,15 @@ permissions:
 
 jobs:
   gh-pages-preview:
-    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.fork == false
     runs-on: ubuntu-latest
     env:
-      SITEURL_SUFFIX: ${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.number) || github.event.inputs.suffix }}
+      SITEURL_SUFFIX: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.suffix || format('pr-{0}', github.event.number) }}
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && github.sha || github.event.pull_request.head.sha }}
+          persist-credentials: false
       - uses: actions/setup-python@v6
         with:
           python-version: '3.8'
