@@ -1,9 +1,20 @@
 # Deploys a website preview from a PR at https://pr-{{PR_NUMBER}}.dev.py.amsterdam
 name: website-preview
-on: [pull_request]
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+  workflow_dispatch: # allows manual triggering of the workflow
+
 jobs:
   preview:
     runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
@@ -25,25 +36,32 @@ jobs:
           make preview
       # Deploy only when PR originates from this repo (not a fork)
       # and when Vercel secrets are available.
+      - name: Install Vercel CLI
+        if: ${{ github.event.pull_request.head.repo.fork == false && env.VERCEL_TOKEN != '' && env.VERCEL_ORG_ID != '' && env.VERCEL_PROJECT_ID != '' }}
+        run: npm install --global vercel@33
       - name: Deploy preview to Vercel
-        if: ${{ github.event.pull_request.head.repo.fork == false && secrets.VERCEL_TOKEN != '' && secrets.VERCEL_ORG_ID != '' && secrets.VERCEL_PROJECT_ID != '' }}
-        uses: amondnet/vercel-action@v25
+        if: ${{ github.event.pull_request.head.repo.fork == false && env.VERCEL_TOKEN != '' && env.VERCEL_ORG_ID != '' && env.VERCEL_PROJECT_ID != '' }}
         env:
           PR_NUMBER: ${{ github.event.number }}
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
-          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
-          zeit-token: ${{ secrets.VERCEL_TOKEN }} # Backward-compat for older inputs
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required
-          working-directory: ./output
-          alias-domains: |
-            pr-{{PR_NUMBER}}.dev.py.amsterdam
+          VERCEL_TOKEN: ${{ env.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ env.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ env.VERCEL_PROJECT_ID }}
+        run: |
+          set -euo pipefail
+          DEPLOY_LOG=$(mktemp)
+          vercel deploy ./output --yes --token "$VERCEL_TOKEN" | tee "$DEPLOY_LOG"
+          DEPLOY_URL=$(grep -Eo 'https://[a-zA-Z0-9.-]+\.vercel\.app' "$DEPLOY_LOG" | tail -n1)
+          if [ -z "$DEPLOY_URL" ]; then
+            echo "Unable to extract deployment URL from Vercel output"
+            exit 1
+          fi
+          echo "Preview deployment: $DEPLOY_URL"
+          vercel alias set "$DEPLOY_URL" "pr-${PR_NUMBER}.dev.py.amsterdam" --token "$VERCEL_TOKEN"
 
       # If we cannot deploy (fork PR or secrets absent),
       # upload the generated site as a build artifact for review.
       - name: Upload preview artifact
-        if: ${{ github.event.pull_request.head.repo.fork == true || secrets.VERCEL_TOKEN == '' || secrets.VERCEL_ORG_ID == '' || secrets.VERCEL_PROJECT_ID == '' }}
+        if: ${{ github.event.pull_request.head.repo.fork == true || env.VERCEL_TOKEN == '' || env.VERCEL_ORG_ID == '' || env.VERCEL_PROJECT_ID == '' }}
         uses: actions/upload-artifact@v5
         with:
           name: site-preview
