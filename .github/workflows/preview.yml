@@ -4,6 +4,10 @@ on: [pull_request]
 jobs:
   preview:
     runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
@@ -26,15 +30,15 @@ jobs:
       # Deploy only when PR originates from this repo (not a fork)
       # and when Vercel secrets are available.
       - name: Install Vercel CLI
-        if: ${{ github.event.pull_request.head.repo.fork == false && secrets.VERCEL_TOKEN != '' && secrets.VERCEL_ORG_ID != '' && secrets.VERCEL_PROJECT_ID != '' }}
+        if: ${{ github.event.pull_request.head.repo.fork == false && env.VERCEL_TOKEN != '' && env.VERCEL_ORG_ID != '' && env.VERCEL_PROJECT_ID != '' }}
         run: npm install --global vercel@33
       - name: Deploy preview to Vercel
-        if: ${{ github.event.pull_request.head.repo.fork == false && secrets.VERCEL_TOKEN != '' && secrets.VERCEL_ORG_ID != '' && secrets.VERCEL_PROJECT_ID != '' }}
+        if: ${{ github.event.pull_request.head.repo.fork == false && env.VERCEL_TOKEN != '' && env.VERCEL_ORG_ID != '' && env.VERCEL_PROJECT_ID != '' }}
         env:
           PR_NUMBER: ${{ github.event.number }}
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_TOKEN: ${{ env.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ env.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ env.VERCEL_PROJECT_ID }}
         run: |
           set -euo pipefail
           DEPLOY_LOG=$(mktemp)
@@ -50,7 +54,7 @@ jobs:
       # If we cannot deploy (fork PR or secrets absent),
       # upload the generated site as a build artifact for review.
       - name: Upload preview artifact
-        if: ${{ github.event.pull_request.head.repo.fork == true || secrets.VERCEL_TOKEN == '' || secrets.VERCEL_ORG_ID == '' || secrets.VERCEL_PROJECT_ID == '' }}
+        if: ${{ github.event.pull_request.head.repo.fork == true || env.VERCEL_TOKEN == '' || env.VERCEL_ORG_ID == '' || env.VERCEL_PROJECT_ID == '' }}
         uses: actions/upload-artifact@v5
         with:
           name: site-preview
