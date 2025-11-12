@@ -6,7 +6,6 @@ PELICANOPTS=
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
-NOW_CONFIG_FILE=$(BASEDIR)/now/now.json
 CONFFILE=$(BASEDIR)/pelicanconf.py
 CONF_PROD=$(BASEDIR)/conf_prod.py
 CONF_PREVIEW=$(BASEDIR)/conf_preview.py

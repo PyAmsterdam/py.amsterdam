@@ -119,6 +119,10 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# Node.js
+node_modules/
+package-lock.json
+yarn.lock
 
 bundle.css
 bundle.js

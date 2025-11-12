@@ -1,5 +1,15 @@
 {
-  "dependencies": {
-    "now": "^21.0.1"
+  "name": "py-amsterdam-website",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "deploy:prod": "vercel --prod",
+    "deploy:preview": "vercel"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
   }
 }
