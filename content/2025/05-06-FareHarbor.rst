@@ -35,7 +35,7 @@ Ujjwal Tyagi, VP of Engineering at FareHarbor opens the new meetup!
 
  .. figure:: {static}/images/2025/Ujjwal-Tyagi-fareharbor.jpg
   :alt: Ujjwal Tyagi, VP of Engineering at FareHarbor
-  :width: 80%
+  :width: 50%
 
 Ujjwal Tyagi is the VP of Engineering at FareHarbor. He is a software engineer with
 a passion for building scalable and efficient systems. 
@@ -69,10 +69,7 @@ follow along with! From queries, filters, and aggregations to
 visualizations, time series analysis, and brat summer—we will explore
 how search analytics can be used for everyday cases.
 
-Links
------
-
-.. _Elasticsearch: https://www.elastic.co/search-labs/blog/spotify-wrapped-create-in-kibana
+Link: https://www.elastic.co/search-labs/blog/spotify-wrapped-create-in-kibana
 
 
 Is it still possible to develop without AI?

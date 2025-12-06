@@ -63,11 +63,8 @@ your needs, helping you make more informed and efficient decisions
 in your Python projects.
 
 
+Link: https://optiver.com/working-at-optiver/career-hub/choosing-between-free-threading-and-async-in-python/
 
-Links
------
-
-.. _Choosing Between Free Threading and Async in Python: https://optiver.com/working-at-optiver/career-hub/choosing-between-free-threading-and-async-in-python/
 
 
 PydanticAI & Logfire
@@ -84,11 +81,8 @@ In this talk, we're going to walk through the basics of PydanticAI,
 and integrate it with Logifre. We'll see how we can run our agents,
 and make sure we monitor our application properly.
 
-Links
------
 
 .. _Marcelo Trylesinski: https://github.com/kludex
-
 
 
 
@@ -97,12 +91,8 @@ Lightning talks
 
 - PyScript, and demoed PySheets with DuckDB by `Chris Laffra`_
 
-Links
------
+Link: https://pyscript.org/
 
-.. _PyScript: https://pyscript.org/
-.. _PySheets: https://www.pyscript.net/
-.. _DuckDB: https://duckdb.org/
 .. _Chris Laffra: https://www.linkedin.com/in/chrislaffra/
 
 👥 About our sponsor: Optiver
