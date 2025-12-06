@@ -7,9 +7,6 @@ PyAmsterdam meetup @ FareHarbor offices
 :cover: images/path_to_image.img
 
 
-About FareHarbor
------------------
-
 The Python community in Amsterdam is thriving, and we're thrilled
 to invite you to our next Py.Amsterdam meetup, this time hosted 
 at Fareharbor!
