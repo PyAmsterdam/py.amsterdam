@@ -22,6 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@v5
       - name: Set up Python
@@ -51,6 +52,20 @@ jobs:
         with:
           name: site-preview
           path: output
+      - name: Comment preview link
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        with:
+          script: |
+            const body = `Preview build ready: [download site-preview artifact](${process.env.RUN_URL})`;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body
+            });
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
