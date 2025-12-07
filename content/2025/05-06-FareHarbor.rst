@@ -8,8 +8,8 @@ PyAmsterdam meetup @ FareHarbor offices
 
 
 The Python community in Amsterdam is thriving, and we're thrilled
-to invite you to our next Py.Amsterdam meetup, this time hosted 
-at Fareharbor!
+to invite you to our next Py.Amsterdam meetup, this time hosted
+at FareHarbor!
 
 Join us for an evening full of insightful talks, community bonding,
 and all things Python. 🐍
@@ -52,7 +52,7 @@ About Iulia Feroli: After working on many sides of tech, I have finally found my
 match as a developer advocate at Elastic - focusing on creating content for, and learning
 from the tech community. I specialise in data science & AI solutions and love creating
 videos, blogs, demos and sessions to get people excited about the possibilities of tech.
-I love to talk about anything NLP, cloud, data science 101, MLOPs, generative AI, and more.
+I love to talk about anything NLP, cloud, data science 101, MLOps, generative AI, and more.
 
 
 Abstract
@@ -79,16 +79,16 @@ Is it still possible to develop without AI?
   :alt: Tyrone Damasceno, Software Engineer at FareHarbor
   :width: 80%
 
-About Tyrone Damasceno: Tyrone Damasceno is brazilian, engineer, pythonista and barbecue lover.
+About Tyrone Damasceno: Tyrone Damasceno is a Brazilian engineer, pythonista and barbecue lover.
 
 
 
-👥 About our sponsor: Fareharbor
+👥 About our sponsor: FareHarbor
 ---------------------------------
 
 FareHarbor is an all-in-one booking solution and business management
 tool for tourism companies. From small shops to large enterprises,
-FareHarbor scales with clients needs, partnering in their growth. We
+FareHarbor scales with clients' needs, partnering in their growth. We
 are the #1 booking software, powering billions of experiences for
 20,000+ businesses worldwide. With 900+ employees and 6 offices across
 North America, Europe, and Australia, we strive to lead experience
