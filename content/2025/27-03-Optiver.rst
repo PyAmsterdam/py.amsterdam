@@ -70,7 +70,7 @@ Link: https://optiver.com/working-at-optiver/career-hub/choosing-between-free-th
 PydanticAI & Logfire
 ---------------------
 
-About `Marcelo Trylesinski`_: Marcelo maintains Starlette & Uvicorn on his free time,
+About `Marcelo Trylesinski`_: Marcelo maintains Starlette & Uvicorn in his free time,
 and he is currently working at Pydantic - focusing on PydanticAI.
 
 
@@ -78,7 +78,7 @@ Abstract
 ~~~~~~~~
 
 In this talk, we're going to walk through the basics of PydanticAI,
-and integrate it with Logifre. We'll see how we can run our agents,
+and integrate it with Logfire. We'll see how we can run our agents,
 and make sure we monitor our application properly.
 
 
