@@ -10,6 +10,6 @@
     "deploy:preview": "vercel"
   },
   "devDependencies": {
-    "vercel": "^33.0.0"
+    "vercel": "^49.1.1"
   }
 }
