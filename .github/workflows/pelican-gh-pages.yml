@@ -86,3 +86,6 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           preview: true
+      - name: Publish preview URL
+        run: |
+          echo "Preview URL: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
