@@ -78,23 +78,16 @@ invoke gh-pages
 # Example: PR_NUMBER=123 make preview
 make preview
 
-# Deploy to Vercel using modern CLI (requires Vercel account/token)
-npm install              # Install Vercel CLI
-npm run deploy:preview   # Deploy preview
-npm run deploy:prod      # Deploy to production
+# Publish to GitHub Pages (gh-pages branch)
+invoke gh-pages
 ```
 
 **Deployment Targets**:
 - **Production**: `https://py.amsterdam` (via `make prod` or `conf_prod.py`)
   - Automatically deployed via GitHub Actions on push to `master` branch
-  - Workflow: `.github/workflows/prod.yml`
-- **GitHub Pages**: `https://pyamsterdam.github.io/py.amsterdam` (via `invoke gh-pages` or `conf_gh_pages.py`)
+  - Workflow: `.github/workflows/pelican-gh-pages.yml`
+- **GitHub Pages**: `https://py.amsterdam` (via `invoke gh-pages` or `conf_gh_pages.py`)
   - Manual deployment option for development previews
-- **PR Preview**: `https://pr-{PR_NUMBER}.dev.py.amsterdam` (via `make preview` or `conf_preview.py`)
-  - Automatically deployed via GitHub Actions for pull requests
-  - Workflow: `.github/workflows/preview.yml`
-
-**Note**: Both GitHub Actions workflows require Vercel secrets (`VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`) and use Node.js 18.x for the Vercel CLI.
 
 ## Architecture Overview
 
@@ -105,8 +98,7 @@ npm run deploy:prod      # Deploy to production
 - **conf_gh_pages.py**: GitHub Pages configuration for preview deployments
 - **conf_preview.py**: PR preview configuration for https://pr-{PR_NUMBER}.dev.py.amsterdam
 - **tasks.py**: Invoke-based task automation for building, serving, and deploying
-- **vercel.json**: Vercel deployment configuration (Node.js 18, build commands)
-- **package.json**: Specifies Node.js 18.x engine for Vercel deployments
+- **.github/workflows/pelican-gh-pages.yml**: CI build and deploy to GitHub Pages
 
 ### Content Organization
 
