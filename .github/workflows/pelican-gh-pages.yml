@@ -1,52 +1,50 @@
-name: Pelican CI & Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [master]
-  pull_request:
-    branches: [master]
-  workflow_dispatch: # allows manual triggering of the workflow
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+env:
+  PYTHON_VERSION: '3.11'
 
 jobs:
-  pelican-build:
-    name: Build and test Pelican
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.8'
+          python-version: ${{ env.PYTHON_VERSION }}
       - name: Install dependencies
         run: |
-          python -m venv .venv
-          source .venv/bin/activate
-          pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: Build the site
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: Build site for production
         run: |
-          source .venv/bin/activate
-          make html
-      - name: Upload generated site
-        uses: actions/upload-artifact@v5
+          make prod
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: site
           path: output
 
   deploy:
-    name: Deploy to GitHub Pages
-    needs: pelican-build
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v5
-      - name: Download built site
-        uses: actions/download-artifact@v5
-        with:
-          name: site
-          path: output
-      - name: Publish to GH Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: output
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
