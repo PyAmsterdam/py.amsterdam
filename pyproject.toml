@@ -6,6 +6,6 @@ readme = "README.md"
 requires-python = ">=3.9,<4.0"
 dependencies = [
     "beautifulsoup4==4.9.3",
-    "minchin-pelican-plugins-nojekyll==1.0.2",
+    "minchin-pelican-plugins-nojekyll==1.2.1",
     "pelican==4.11.0.post0",
 ]
