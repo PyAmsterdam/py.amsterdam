@@ -56,7 +56,7 @@ Deploy dev version:
 At the moment dev version deployment is best to do to GH pages.
 
 #. ``pip install -r requirements.txt``
-#. ``invoke gh-pages``
+#. ``invoke gh-pages`` or ``make devserver``
 #. Navigate to: https://pyamsterdam.github.io/py.amsterdam
 
 .. _pelican: https://blog.getpelican.com/
