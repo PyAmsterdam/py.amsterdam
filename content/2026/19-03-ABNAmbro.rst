@@ -2,8 +2,8 @@ PyAmsterdam meetup @ ABN AMRO
 ==============================
 
 :event_type: Meetup
-:rsvp_url: https://www.meetup.com/pyamsterdam/events/
-:date: 2026-03-18 18:00
+:rsvp_url: https://www.meetup.com/pyamsterdam/events/313526152/
+:date: 2026-03-19 17:30
 :cover: images/path_to_image.img
 
 
@@ -59,9 +59,9 @@ Links
 .. _Speaker 2: 
 
 
-👥 About our sponsor: ABN AMRO
+👥 About our host: ABN AMRO
 -------------------------------
 
-*[Add sponsor description if desired]*
+ABN AMRO is one of the Netherlands' largest and most established banks, with a history spanning over 300 years. Headquartered in Amsterdam, the bank serves millions of retail, private, and corporate clients across the globe. ABN AMRO is committed to innovation and sustainability, actively investing in digital transformation and fintech partnerships to shape the future of banking. With a strong engineering culture, the bank employs hundreds of tech professionals working on cutting-edge solutions in data, cloud, and software development.
 
 🔗 Check out their job board: https://www.abnamro.nl/en/careers/
