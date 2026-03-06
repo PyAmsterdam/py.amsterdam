@@ -2,8 +2,8 @@ PyAmsterdam meetup @ ABN AMRO
 ==============================
 
 :event_type: Meetup
-:rsvp_url: https://www.meetup.com/pyamsterdam/events/313526152/
-:date: 2026-03-19 17:30
+:rsvp_url: https://www.meetup.com/pyamsterdam/events/313647263/
+:date: 2026-04-29 17:30
 :cover: images/path_to_image.img
 
 
