@@ -85,7 +85,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
   deploy_preview:
     needs: build
@@ -101,7 +101,7 @@ jobs:
     steps:
       - name: Deploy PR preview to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         with:
           preview: true
       - name: Publish preview URL
